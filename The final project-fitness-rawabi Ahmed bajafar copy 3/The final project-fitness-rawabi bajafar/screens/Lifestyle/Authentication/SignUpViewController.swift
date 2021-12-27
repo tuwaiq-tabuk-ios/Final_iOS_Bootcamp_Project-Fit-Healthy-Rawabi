@@ -20,6 +20,10 @@ class SignUpViewController: UIViewController {
   
   @IBOutlet weak var passwordTextField: UITextField!
   
+
+  @IBOutlet var Confirm: MainTF!
+  
+  
   @IBOutlet weak var signUpButton: UIButton!
   
   @IBOutlet weak var errorLabel: UILabel!
@@ -47,6 +51,7 @@ class SignUpViewController: UIViewController {
     Utilities.styleTextField(lastNameTextField)
     Utilities.styleTextField(emailTextField)
     Utilities.styleTextField(passwordTextField)
+    Utilities.styleTextField(Confirm)
     Utilities.styleFilledButton(signUpButton)
     Utilities.styleTextField(weight)
     Utilities.styleTextField(Height)
@@ -62,6 +67,7 @@ class SignUpViewController: UIViewController {
         lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+        Confirm.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         weight.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         Height.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         Age.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
@@ -98,6 +104,7 @@ class SignUpViewController: UIViewController {
       let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
       let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
       let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+      let Confirm = Confirm.text?.trimmingCharacters(in: .whitespacesAndNewlines)
       let weight = weight.text!.trimmingCharacters(in: .whitespacesAndNewlines)
       let height = Height.text!.trimmingCharacters(in: .whitespacesAndNewlines)
       let age = Age.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -121,6 +128,7 @@ class SignUpViewController: UIViewController {
           db.collection("users").addDocument(data: ["firstname":firstName,
                                                     "lastname":lastName,
                                                     "password":password,
+                                                    "Confirm" : Confirm,
                                                     "email" : email,
                                                     "weight":weight,
                                                     "height":height,
