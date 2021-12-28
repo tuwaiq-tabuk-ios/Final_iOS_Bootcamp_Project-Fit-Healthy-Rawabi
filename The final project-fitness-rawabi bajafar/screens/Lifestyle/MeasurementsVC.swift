@@ -58,7 +58,16 @@ class MeasurementsVC: UIViewController {
       }
     }
   
-  }
+ 
+  @IBAction func lifestyle(_ sender: Any) {
+  
+    let vc1 = storyboard?.instantiateViewController(withIdentifier: "HomeVC")
+    if let viewVC1 = vc1 {
+      present(viewVC1, animated: true, completion: nil)
+  
+}
+  
+}
   
 
   
@@ -69,3 +78,4 @@ class MeasurementsVC: UIViewController {
   
   
     
+}

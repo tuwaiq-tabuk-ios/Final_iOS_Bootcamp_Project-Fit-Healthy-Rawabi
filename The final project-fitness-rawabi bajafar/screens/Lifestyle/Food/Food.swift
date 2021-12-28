@@ -11,5 +11,7 @@ import UIKit
 struct Food {
   var name: String
   var image: UIImage?
+  var ingredients: [String]
   var desc: String
+
 }

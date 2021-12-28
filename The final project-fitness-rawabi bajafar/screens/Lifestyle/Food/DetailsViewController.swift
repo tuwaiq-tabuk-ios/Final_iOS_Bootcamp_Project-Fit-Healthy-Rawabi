@@ -11,15 +11,22 @@ class DetailsViewController: UIViewController {
 
   @IBOutlet var FoodNameLabel: UILabel!
   @IBOutlet var FoodImageView: UIImageView!
-  @IBOutlet var FoodDetailsLabel: UILabel!
+  
+  @IBOutlet var IngredientsLabel: UILabel!
+  @IBOutlet var DescriptionLabel: UILabel!
+  
   
   var food: Food!
  
   override func viewDidLoad() {
         super.viewDidLoad()
+    
+    
     FoodNameLabel.text = food.name
     FoodImageView.image = food.image
-    FoodDetailsLabel.text = food.desc
+    IngredientsLabel.text = food.ingredients.joined(separator: "\n")
+    DescriptionLabel.text = food.desc
+    
     // Do any additional setup after loading the view.
     }
     

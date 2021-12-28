@@ -10,7 +10,6 @@ import UIKit
 class FoodCell: UITableViewCell {
 
   @IBOutlet var FoodImageView: UIImageView!
- 
   @IBOutlet var FoodNameLabel: UILabel!
   
   override func awakeFromNib() {

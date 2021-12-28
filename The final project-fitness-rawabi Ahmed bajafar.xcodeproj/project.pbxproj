@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0B54BD2779D57100CAD052 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0B54BC2779D57100CAD052 /* SearchResultsController.swift */; };
 		BF2732BC27751EDD00535724 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732BB27751EDD00535724 /* HomeViewController.swift */; };
 		BF2732BF27751F0700535724 /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732BE27751F0700535724 /* GenderVC.swift */; };
 		BF2732C127751F0F00535724 /* MeasurementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732C027751F0F00535724 /* MeasurementsVC.swift */; };
@@ -33,6 +34,7 @@
 		BF81637D276B50B500BEDD43 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BF81637C276B50B500BEDD43 /* FirebaseAnalytics */; };
 		BF81637F276B50B500BEDD43 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BF81637E276B50B500BEDD43 /* FirebaseAuth */; };
 		BF816381276B50B500BEDD43 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF816380276B50B500BEDD43 /* FirebaseFirestore */; };
+		BF91E2B7277B43C000BFF170 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91E2B6277B43C000BFF170 /* ForgotPasswordVC.swift */; };
 		BFCA7B4A27788F8100C95D09 /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA7B4927788F8100C95D09 /* AvatarImageView.swift */; };
 		BFCA7B4C27788F8A00C95D09 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA7B4B27788F8A00C95D09 /* DetailVC.swift */; };
 		BFCA7B4E27788F9800C95D09 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA7B4D27788F9800C95D09 /* ProfileTableViewController.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF0B54BC2779D57100CAD052 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		BF2732BB27751EDD00535724 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BF2732BE27751F0700535724 /* GenderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderVC.swift; sourceTree = "<group>"; };
 		BF2732C027751F0F00535724 /* MeasurementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementsVC.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		BF5ED6C7276B317400168689 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingTableViewCell.swift; path = "../../../../../FINAL PROJECT/The final project-fitness-rawabi 3/The final project-fitness-rawabi bajafar/Setting/SettingTableViewCell.swift"; sourceTree = "<group>"; };
 		BF62A8D0277991DF004B0F82 /* MainTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTF.swift; sourceTree = "<group>"; };
 		BF816379276B4F9400BEDD43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF91E2B6277B43C000BFF170 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		BFCA7B4927788F8100C95D09 /* AvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		BFCA7B4B27788F8A00C95D09 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		BFCA7B4D27788F9800C95D09 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 				BF2732CD277520CB00535724 /* LoginViewController.swift */,
 				BF2732CF277520D100535724 /* SignUpViewController.swift */,
 				BF2732D1277520D900535724 /* SignUpSelection.swift */,
+				BF91E2B6277B43C000BFF170 /* ForgotPasswordVC.swift */,
 				BFCA7B4927788F8100C95D09 /* AvatarImageView.swift */,
 				BFCA7B4D27788F9800C95D09 /* ProfileTableViewController.swift */,
 				BFCA7B4B27788F8A00C95D09 /* DetailVC.swift */,
@@ -143,6 +148,7 @@
 			children = (
 				BF2732D42775214D00535724 /* DetailsViewController.swift */,
 				BF2732D62775215800535724 /* FoodViewController.swift */,
+				BF0B54BC2779D57100CAD052 /* SearchResultsController.swift */,
 				BF2732D82775216500535724 /* FoodCell.swift */,
 				BF2732DA2775216C00535724 /* Food.swift */,
 			);
@@ -333,6 +339,7 @@
 				BFF59E13276D95FC00C9EB79 /* UserInfoHeader.swift in Sources */,
 				BF2732D0277520D100535724 /* SignUpViewController.swift in Sources */,
 				BF5ED6C4276B314300168689 /* Utilities.swift in Sources */,
+				BF91E2B7277B43C000BFF170 /* ForgotPasswordVC.swift in Sources */,
 				BF2732DE2775223300535724 /* viewControllerSection.swift in Sources */,
 				BF2732D2277520D900535724 /* SignUpSelection.swift in Sources */,
 				BF5ED6C8276B317400168689 /* SettingTableViewCell.swift in Sources */,
@@ -346,6 +353,7 @@
 				BF2732CB2775204800535724 /* TabBarVC.swift in Sources */,
 				BFCA7B4A27788F8100C95D09 /* AvatarImageView.swift in Sources */,
 				BF2732C127751F0F00535724 /* MeasurementsVC.swift in Sources */,
+				BF0B54BD2779D57100CAD052 /* SearchResultsController.swift in Sources */,
 				BF2732D52775214D00535724 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
