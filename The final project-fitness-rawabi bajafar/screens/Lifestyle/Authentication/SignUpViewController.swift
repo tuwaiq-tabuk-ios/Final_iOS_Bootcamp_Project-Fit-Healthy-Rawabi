@@ -20,7 +20,7 @@ class SignUpViewController: UIViewController {
   
   @IBOutlet weak var passwordTextField: UITextField!
   
-
+  
   @IBOutlet var Confirm: MainTF!
   
   
@@ -32,14 +32,29 @@ class SignUpViewController: UIViewController {
   
   @IBOutlet var Height: UITextField!
   
-  @IBOutlet var Age: UITextField!
+  @IBOutlet var DateOfBirth: UITextField!
   
+  @IBOutlet var confirmTextField: MainTF!
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    firstNameTextField.text = "rawabi"
+    lastNameTextField.text = "Ahmed"
+    emailTextField.text = "test1238@gmail.com"
+    passwordTextField.text = "123_$Ff3"
+    weight.text = "55"
+    Height.text = "156"
+    DateOfBirth.text = "2-3-2020"
+    confirmTextField.text = "123_$Ff3"
     // Do any additional setup after loading the view.
     setUpElements()
+    
   }
+  
+  
+  
+  
+  
+  
   
   func setUpElements() {
     
@@ -55,7 +70,7 @@ class SignUpViewController: UIViewController {
     Utilities.styleFilledButton(signUpButton)
     Utilities.styleTextField(weight)
     Utilities.styleTextField(Height)
-    Utilities.styleTextField(Age)
+    Utilities.styleTextField(DateOfBirth)
     
   }
   
@@ -70,7 +85,8 @@ class SignUpViewController: UIViewController {
         Confirm.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         weight.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         Height.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-        Age.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+        DateOfBirth.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+    {
       
       return "Please fill in all fields."
     }
@@ -94,6 +110,10 @@ class SignUpViewController: UIViewController {
     
     if error != nil {
       
+      //      let vc = storyboard?.instantiateViewController(withIdentifier: "Lifestyle")
+      //      if let viewController = vc {
+      //        navigationController?.pushViewController(viewController, animated: true)
+      //      }
       // There's something wrong with the fields, show error message
       showError(error!)
     }
@@ -107,8 +127,8 @@ class SignUpViewController: UIViewController {
       let Confirm = Confirm.text?.trimmingCharacters(in: .whitespacesAndNewlines)
       let weight = weight.text!.trimmingCharacters(in: .whitespacesAndNewlines)
       let height = Height.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      let age = Age.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      
+      let age = DateOfBirth.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+      let DateOfBirth = DateOfBirth.text!.trimmingCharacters(in: .whitespacesAndNewlines)
       
       
       // Create the user
@@ -121,28 +141,43 @@ class SignUpViewController: UIViewController {
           self.showError("Error creating user")
         }
         else {
-          
+          print(result)
           // User was created successfully, now store the first name and last name
           let db = Firestore.firestore()
-          
-          db.collection("users").addDocument(data: ["firstname":firstName,
-                                                    "lastname":lastName,
-                                                    "password":password,
-                                                    "Confirm" : Confirm,
-                                                    "email" : email,
-                                                    "weight":weight,
-                                                    "height":height,
-                                                    "age":age,
-                                                    "uid": result!.user.uid ]) { (error) in
+          let id = result?.user.uid
+          db.collection("users").document(id!).setData(["firstname":firstName,
+              "lastname":lastName,
+              "weight":weight,
+              "height":height,
+              "DateOfBirth":DateOfBirth,
+              "uid":result!.user.uid ]) { (error) in
             
             if error != nil {
               // Show error message
               self.showError("Error saving user data")
             }
+            else{
+              self.transitionToHome()
+            }
           }
-          
+//          db.collection("users").addDocument(data: ["firstname":firstName,
+//                                                    "lastname":lastName,
+//                                                    // "password":password,
+//                                                    // "Confirm" : Confirm,
+//                                                    //"email" : email,
+//                                                    "weight":weight,
+//                                                    "height":height,
+//                                                    "DateOfBirth":DateOfBirth,
+//                                                    "uid": result!.user.uid ]) { (error) in
+//
+//            if error != nil {
+//              // Show error message
+//              self.showError("Error saving user data")
+//            }
+//          }
           // Transition to the home screen
-          self.transitionToHome()
+//          self.transitionToHome()
+          
         }
         
       }
@@ -160,13 +195,20 @@ class SignUpViewController: UIViewController {
   
   func transitionToHome() {
     
-    let homeViewController = storyboard?.instantiateViewController(identifier: Constants.StoryboardSignUp.homeViewController) as? SignUpSelection
+    //    let homeViewController = storyboard?.instantiateViewController(identifier: Constants.StoryboardSignUp.homeViewController) as? SignUpSelection
+    //
+    //
+    //    view.window?.rootViewController = homeViewController
+    //    view.window?.makeKeyAndVisible()
     
-    view.window?.rootViewController = homeViewController
-    view.window?.makeKeyAndVisible()
+    let vc2 = storyboard?.instantiateViewController(withIdentifier: "HomeSignUp")
     
+    if let viewcontrollerr = vc2 {
+      
+      
+      present(viewcontrollerr, animated: true)
+      
+    }
   }
   
 }
-
-

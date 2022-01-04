@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class DetailsViewController: UIViewController {
 
@@ -15,12 +16,14 @@ class DetailsViewController: UIViewController {
   @IBOutlet var IngredientsLabel: UILabel!
   @IBOutlet var DescriptionLabel: UILabel!
   
-  
+  var listOfFood = [""]
+ 
+  var foodDictionary: [String] = [""]
   var food: Food!
  
   override func viewDidLoad() {
         super.viewDidLoad()
-    
+    //getSpotsData()
     
     FoodNameLabel.text = food.name
     FoodImageView.image = food.image
@@ -29,16 +32,25 @@ class DetailsViewController: UIViewController {
     
     // Do any additional setup after loading the view.
     }
-    
+  
+// func getSpotsData() {
+//  let db = Firestore.firestore()
+//
+//  db.collection("recipes").getDocuments() { (querySnapshot, err) in
+//    if let err = err {
+//      print("Error getting documents: \(err)")
+//    } else {
+//      for document in querySnapshot!.documents {
+//       print("***********\n\n\n\(document.documentID) => \(document.data())")
+//       print("******\n\n\n")
+////       print(document.data()["name"]!)
+//       self.listOfFood.append(document.data()["name"] as! String)
+////       print("\n\nThis is the listArray:\(self.listArray)")
+//      }
+//    }
+  }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+// }
+//
+//}
