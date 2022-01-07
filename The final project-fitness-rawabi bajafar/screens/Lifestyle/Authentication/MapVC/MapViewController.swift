@@ -1,180 +1,53 @@
+//
+//  MapViewController.swift
+//  The final project-fitness-rawabi bajafar
+//
+//  Created by روابي باجعفر on 02/06/1443 AH.
+//
+
 import UIKit
 import MapKit
+import CoreLocation
+class MapViewController: UIViewController , CLLocationManagerDelegate {
 
-class MapViewController: UIViewController,
-                         MKMapViewDelegate,
-                         CLLocationManagerDelegate  {
+  @IBOutlet var mapView: MKMapView!
+  @IBOutlet var statusLabel: UILabel!
   
-  var mapView: MKMapView!
-  var locationManager: CLLocationManager?
-  
-  var segmentedControl: UISegmentedControl!
-  var pointsOfInterestLabel: UILabel!
-  var pointsOfInterestSwitch: UISwitch!
-  var localizationButton: UIButton!
-  
-  var userLocation: CLLocationManager!
-  
-  
-  override func loadView() {
-    // Create a map view
-    mapView = MKMapView()
-    // Set it as *the* view of this view controller
-    view = mapView
+  let manager = CLLocationManager()
+ 
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
+  [CLLocation]) {
     
-    mapView.delegate = self
-    locationManager = CLLocationManager()
-    locationManager!.delegate = self
-    
-    
-    // CREATE CONTROLS
-    segmentedControl
-      = createSegmentedControl(buttons: ["Standard", "Hybrid", "Satellite"],
-                               backgroundColor: UIColor.white.withAlphaComponent(0.5),
-                               selectedSegmentIndex: 0)
-    
-    pointsOfInterestLabel = createLabel(text: "Points of Interest")
-    
-    pointsOfInterestSwitch = createSwitch()
-    
-    
-    
-    view.addSubview(segmentedControl)
-    view.addSubview(pointsOfInterestLabel)
-    view.addSubview(pointsOfInterestSwitch)
+    let location = locations[0]
+    let span = MKCoordinateSpan(latitudeDelta: 0.03 , longitudeDelta: 0.03)
    
-    
-    // CREATE CONSTRAINTS
-    let margins = view.layoutMarginsGuide
-    
-    NSLayoutConstraint.activate([
-      segmentedControl.topAnchor
-        .constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-                    constant: 8),
-      segmentedControl.leadingAnchor
-        .constraint(equalTo: margins.leadingAnchor,
-                    constant: 8),
-      segmentedControl.trailingAnchor
-        .constraint(equalTo: margins.trailingAnchor,
-                    constant: -8),
-      
-      pointsOfInterestLabel.topAnchor
-        .constraint(equalTo: segmentedControl.bottomAnchor, constant: 20),
-      pointsOfInterestSwitch.topAnchor
-        .constraint(equalTo: segmentedControl.bottomAnchor,
-                    constant: 20),
-      pointsOfInterestLabel.centerYAnchor
-        .constraint(equalTo: pointsOfInterestSwitch.centerYAnchor),
-      pointsOfInterestLabel.leadingAnchor
-        .constraint(equalTo: margins.leadingAnchor,
-                    constant: 8),
-      pointsOfInterestSwitch.leadingAnchor
-        .constraint(equalTo: pointsOfInterestLabel.trailingAnchor,
-                    constant: 8),
-    ])
-    
-    
-    pointsOfInterestSwitch.addTarget(
-      self,
-      action: #selector(pointsOfInterestSwitchChanged),
-      for: .valueChanged
-    )
-    
-    
-    segmentedControl.addTarget(
-      self,
-      action: #selector(MapViewController.mapTypeChanged(_:)),
-      for: .valueChanged
-    )
-  }
+    let myLocation = CLLocationCoordinate2DMake(location.coordinate.latitude,location.coordinate.longitude)
+    let region = MKCoordinateRegion(center: myLocation, span: span)
+   mapView.setRegion(region, animated: true)
   
+    self.mapView.showsUserLocation = true
+    statusLabel.text = "\(location.speed)"
+  }
+ 
   
   override func viewDidLoad() {
-    super.viewDidLoad()
-    print("MapViewController loaded its view.")
-    
-    mapView.delegate = self
-    userLocation = CLLocationManager()
-    userLocation.requestWhenInUseAuthorization()
-    mapView.showsUserLocation = true
-    print("MapViewController loaded its view.")
-    
-  
-  }
-  
-  
-  @objc func mapTypeChanged(_ segControl: UISegmentedControl) {
-    switch segControl.selectedSegmentIndex {
-    case 0:
-      mapView.mapType = .standard
-    case 1:
-      mapView.mapType = .hybrid
-    case 2:
-      mapView.mapType = .satellite
-    default:
-      break
-    }
-  }
-  
-  
-  @objc func pointsOfInterestSwitchChanged(_ poiSwitch: UISwitch) {
-    if pointsOfInterestSwitch.isOn {
-      mapView.pointOfInterestFilter = MKPointOfInterestFilter.includingAll
-      pointsOfInterestLabel.font = UIFont.systemFont(ofSize: 20)
-    }
-    else {
-      mapView.pointOfInterestFilter = MKPointOfInterestFilter.excludingAll
-      pointsOfInterestLabel.font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
-    }
-  }
-  
-  
-  @objc func showLocalization(sender: UIButton!){
-    locationManager!.requestWhenInUseAuthorization()//se agrega permiso en info.plist
-    mapView.showsUserLocation = true //fire up the method mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation)
-    mapView.userTrackingMode = .follow
-  }
-  
+        super.viewDidLoad()
 
-  func createSegmentedControl(
-    buttons: [String],
-    backgroundColor: UIColor,
-    selectedSegmentIndex: Int
-  ) -> UISegmentedControl{
-    
-    let segmentedControl = UISegmentedControl(items: buttons)
-    segmentedControl.backgroundColor = backgroundColor
-    segmentedControl.selectedSegmentIndex = selectedSegmentIndex
-    
-    segmentedControl.translatesAutoresizingMaskIntoConstraints = false
-    
-    return segmentedControl
+    manager.delegate = self
+    manager.desiredAccuracy = kCLLocationAccuracyBest
+    manager.requestWhenInUseAuthorization()
+    manager.startUpdatingLocation()
   }
-  
-  
-  func createLabel(text: String) -> UILabel {
-    let label = UILabel()
-    label.text = text
     
-    label.translatesAutoresizingMaskIntoConstraints = false
-    
-    return label
-  }
-  
-  
-  func createSwitch() -> UISwitch {
-    let uiSwitch = UISwitch()
-    
-    uiSwitch.translatesAutoresizingMaskIntoConstraints = false
-    
-    return uiSwitch
-  }
-  
-  
-  func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-    let span = MKCoordinateSpan(latitudeDelta: 0.08, longitudeDelta: 0.08)
-    let theRegion = MKCoordinateRegion(center: userLocation.coordinate, span: span)
-    mapView.setRegion(theRegion, animated: true)
-  }
-  
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }

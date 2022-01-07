@@ -49,20 +49,40 @@ class SettingVC: UIViewController{
     }
       
   @IBAction func SignOut(_ sender: Any) {
-    let vc4 = storyboard?.instantiateViewController(withIdentifier: "Exercise")
-        if let viewController12 = vc4 {
-        navigationController?.pushViewController(viewController12, animated: true)
-          let firebaseAuth = Auth.auth()
-              do {
-                try firebaseAuth.signOut()
-                self.navigationController?.popToRootViewController(animated: true)
-                print("signOut")
-              } catch let signOutError as NSError {
-                print("Error signing out: %@", signOutError)
+    
+    let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+          self.navigationController?.popToRootViewController(animated: true)
+          print("signOut")
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
 
-        }
-  
   }
+ 
+      
+
+  }
+}
+
+
+    
+
+    
+    //    let vc4 = storyboard?.instantiateViewController(withIdentifier: "Exercise")
+//        if let viewController12 = vc4 {
+//        navigationController?.pushViewController(viewController12, animated: true)
+//          let firebaseAuth = Auth.auth()
+//              do {
+//                try firebaseAuth.signOut()
+//                self.navigationController?.popToRootViewController(animated: true)
+//                print("signOut")
+//              } catch let signOutError as NSError {
+//                print("Error signing out: %@", signOutError)
+//
+//        }
+//
+//  }
   // let viewController = self.storyboard?.instantiateViewController(withIdentifier: "profile") as! ProfileVC
 
  
@@ -82,5 +102,3 @@ class SettingVC: UIViewController{
 //      print("Error signing out: %@", signOutError)
 
 
-}
-}

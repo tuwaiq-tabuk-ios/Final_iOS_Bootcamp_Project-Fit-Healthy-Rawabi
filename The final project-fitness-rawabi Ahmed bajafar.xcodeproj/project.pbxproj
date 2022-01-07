@@ -28,10 +28,10 @@
 		BF2732D92775216500535724 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732D82775216500535724 /* FoodCell.swift */; };
 		BF2732DB2775216C00535724 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732DA2775216C00535724 /* Food.swift */; };
 		BF2732DE2775223300535724 /* viewControllerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732DD2775223300535724 /* viewControllerSection.swift */; };
-		BF2D4646278194890023A17B /* WalkRunCycleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D4645278194890023A17B /* WalkRunCycleVC.swift */; };
 		BF4EEEC02782436500D64281 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4EEEBF2782436500D64281 /* Users.swift */; };
 		BF54067D27676F7C00B118B6 /* VideoWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54067C27676F7C00B118B6 /* VideoWorkoutViewController.swift */; };
-		BF5ED6BA276B2DCC00168689 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED6B9276B2DCC00168689 /* MapViewController.swift */; };
+		BF5688CE27861B1900E83FC1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5688CD27861B1900E83FC1 /* CoreLocation.framework */; };
+		BF5688D027861CD400E83FC1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5688CF27861CD400E83FC1 /* MapViewController.swift */; };
 		BF5ED6C4276B314300168689 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED6C3276B314300168689 /* Utilities.swift */; };
 		BF5ED6C6276B315600168689 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED6C5276B315600168689 /* Constants.swift */; };
 		BF62A8D1277991DF004B0F82 /* MainTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF62A8D0277991DF004B0F82 /* MainTF.swift */; };
@@ -39,6 +39,8 @@
 		BF81637D276B50B500BEDD43 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BF81637C276B50B500BEDD43 /* FirebaseAnalytics */; };
 		BF81637F276B50B500BEDD43 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BF81637E276B50B500BEDD43 /* FirebaseAuth */; };
 		BF816381276B50B500BEDD43 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF816380276B50B500BEDD43 /* FirebaseFirestore */; };
+		BF8C674D2785F39B00CDB60F /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C674C2785F39B00CDB60F /* BMIViewController.swift */; };
+		BF8C674F2785F5F200CDB60F /* BuildingRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C674E2785F5F200CDB60F /* BuildingRecipesViewController.swift */; };
 		BF91E2B7277B43C000BFF170 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91E2B6277B43C000BFF170 /* ForgotPasswordVC.swift */; };
 		BFCA7B4A27788F8100C95D09 /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA7B4927788F8100C95D09 /* AvatarImageView.swift */; };
 		BFCA7B4C27788F8A00C95D09 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCA7B4B27788F8A00C95D09 /* DetailVC.swift */; };
@@ -48,15 +50,7 @@
 		BFDA13E8275D4F4C007C22B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA13E7275D4F4C007C22B1 /* SceneDelegate.swift */; };
 		BFDA13F2275D4F4D007C22B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDA13F0275D4F4D007C22B1 /* LaunchScreen.storyboard */; };
 		BFE484092782EC290008FC3A /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE484082782EC290008FC3A /* SettingTableViewCell.swift */; };
-		BFF6DF4B277F226E00341B5A /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DF4A277F226E00341B5A /* WorkoutViewController.swift */; };
-		BFF6DF4D277F227700341B5A /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DF4C277F227700341B5A /* Habit.swift */; };
-		BFF6DF4F277F228500341B5A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DF4E277F228500341B5A /* HistoryViewController.swift */; };
-		BFF6DF51277F230800341B5A /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DF50277F230800341B5A /* Reminder.swift */; };
-		BFF99DC92781BCC3001D56B6 /* FWEndWorkoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF99DC82781BCC3001D56B6 /* FWEndWorkoutButton.swift */; };
-		BFF99DCB2781BCCB001D56B6 /* FWPauseWorkoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF99DCA2781BCCB001D56B6 /* FWPauseWorkoutButton.swift */; };
-		BFF99DCD2781C3F0001D56B6 /* WorkoutWalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF99DCC2781C3F0001D56B6 /* WorkoutWalkTableViewCell.swift */; };
-		BFF99DCF2781C3FC001D56B6 /* WorkoutWalkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF99DCE2781C3FC001D56B6 /* WorkoutWalkTableViewCell.xib */; };
-		BFF99DD22781CC69001D56B6 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF99DD12781CC69001D56B6 /* HabitTableViewCell.swift */; };
+		BFF928A12785D0A600C11BB8 /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF928A02785D0A600C11BB8 /* CalorieCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,14 +75,16 @@
 		BF2732D82775216500535724 /* FoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		BF2732DA2775216C00535724 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		BF2732DD2775223300535724 /* viewControllerSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewControllerSection.swift; sourceTree = "<group>"; };
-		BF2D4645278194890023A17B /* WalkRunCycleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkRunCycleVC.swift; sourceTree = "<group>"; };
 		BF4EEEBF2782436500D64281 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		BF54067C27676F7C00B118B6 /* VideoWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoWorkoutViewController.swift; sourceTree = "<group>"; };
-		BF5ED6B9276B2DCC00168689 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BF5688CD27861B1900E83FC1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BF5688CF27861CD400E83FC1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BF5ED6C3276B314300168689 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		BF5ED6C5276B315600168689 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BF62A8D0277991DF004B0F82 /* MainTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTF.swift; sourceTree = "<group>"; };
 		BF816379276B4F9400BEDD43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF8C674C2785F39B00CDB60F /* BMIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
+		BF8C674E2785F5F200CDB60F /* BuildingRecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingRecipesViewController.swift; sourceTree = "<group>"; };
 		BF91E2B6277B43C000BFF170 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		BFCA7B4927788F8100C95D09 /* AvatarImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		BFCA7B4B27788F8A00C95D09 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
@@ -100,15 +96,7 @@
 		BFDA13F1275D4F4D007C22B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFDA13F3275D4F4D007C22B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFE484082782EC290008FC3A /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
-		BFF6DF4A277F226E00341B5A /* WorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
-		BFF6DF4C277F227700341B5A /* Habit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
-		BFF6DF4E277F228500341B5A /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		BFF6DF50277F230800341B5A /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
-		BFF99DC82781BCC3001D56B6 /* FWEndWorkoutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWEndWorkoutButton.swift; sourceTree = "<group>"; };
-		BFF99DCA2781BCCB001D56B6 /* FWPauseWorkoutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWPauseWorkoutButton.swift; sourceTree = "<group>"; };
-		BFF99DCC2781C3F0001D56B6 /* WorkoutWalkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutWalkTableViewCell.swift; sourceTree = "<group>"; };
-		BFF99DCE2781C3FC001D56B6 /* WorkoutWalkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutWalkTableViewCell.xib; sourceTree = "<group>"; };
-		BFF99DD12781CC69001D56B6 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
+		BFF928A02785D0A600C11BB8 /* CalorieCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5688CE27861B1900E83FC1 /* CoreLocation.framework in Frameworks */,
 				BF81637D276B50B500BEDD43 /* FirebaseAnalytics in Frameworks */,
 				BF81637F276B50B500BEDD43 /* FirebaseAuth in Frameworks */,
 				BF816381276B50B500BEDD43 /* FirebaseFirestore in Frameworks */,
@@ -148,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				BF2732BE27751F0700535724 /* GenderVC.swift */,
+				BFF928A02785D0A600C11BB8 /* CalorieCalculator.swift */,
 				BF2732C027751F0F00535724 /* MeasurementsVC.swift */,
 				BF2732C227751F1800535724 /* ExerciseVC.swift */,
 				BF2732CC277520B800535724 /* Authentication */,
@@ -207,7 +197,7 @@
 		BF3FC0012769430B000933A8 /* MapVC */ = {
 			isa = PBXGroup;
 			children = (
-				BF5ED6B9276B2DCC00168689 /* MapViewController.swift */,
+				BF5688CF27861CD400E83FC1 /* MapViewController.swift */,
 			);
 			path = MapVC;
 			sourceTree = "<group>";
@@ -245,11 +235,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BF5688CC27861B1900E83FC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF5688CD27861B1900E83FC1 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF8C674B2785F38500CDB60F /* MyPlate */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C674E2785F5F200CDB60F /* BuildingRecipesViewController.swift */,
+				BF8C674C2785F39B00CDB60F /* BMIViewController.swift */,
+			);
+			path = MyPlate;
+			sourceTree = "<group>";
+		};
 		BFDA13D9275D4F4C007C22B1 = {
 			isa = PBXGroup;
 			children = (
 				BFDA13E4275D4F4C007C22B1 /* The final project-fitness-rawabi bajafar */,
 				BFDA13E3275D4F4C007C22B1 /* Products */,
+				BF5688CC27861B1900E83FC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,7 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				BF2732B927751EBD00535724 /* screens */,
-				BFF6DF52277F2C7E00341B5A /* WorkoutViewController */,
+				BF8C674B2785F38500CDB60F /* MyPlate */,
 				BF3FC01A27694A2F000933A8 /* View */,
 				BF2732DC2775220E00535724 /* VideoWorkoutViewController */,
 				BF3FC01827694A00000933A8 /* Setting */,
@@ -273,31 +281,6 @@
 				BFDA13F3275D4F4D007C22B1 /* Info.plist */,
 			);
 			path = "The final project-fitness-rawabi bajafar";
-			sourceTree = "<group>";
-		};
-		BFF6DF52277F2C7E00341B5A /* WorkoutViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BFF6DF4E277F228500341B5A /* HistoryViewController.swift */,
-				BFF99DD12781CC69001D56B6 /* HabitTableViewCell.swift */,
-				BFF6DF4A277F226E00341B5A /* WorkoutViewController.swift */,
-				BF2D4645278194890023A17B /* WalkRunCycleVC.swift */,
-				BFF99DCA2781BCCB001D56B6 /* FWPauseWorkoutButton.swift */,
-				BFF99DC82781BCC3001D56B6 /* FWEndWorkoutButton.swift */,
-				BFF6DF50277F230800341B5A /* Reminder.swift */,
-				BFF6DF4C277F227700341B5A /* Habit.swift */,
-				BFF99DD02781C435001D56B6 /* WorkoutWalkTableViewCell */,
-			);
-			path = WorkoutViewController;
-			sourceTree = "<group>";
-		};
-		BFF99DD02781C435001D56B6 /* WorkoutWalkTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				BFF99DCE2781C3FC001D56B6 /* WorkoutWalkTableViewCell.xib */,
-				BFF99DCC2781C3F0001D56B6 /* WorkoutWalkTableViewCell.swift */,
-			);
-			path = WorkoutWalkTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +349,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF99DCF2781C3FC001D56B6 /* WorkoutWalkTableViewCell.xib in Resources */,
 				BFDA13F2275D4F4D007C22B1 /* LaunchScreen.storyboard in Resources */,
 				BF2732C527751FC800535724 /* Main.storyboard in Resources */,
 				BF81637A276B4F9400BEDD43 /* GoogleService-Info.plist in Resources */,
@@ -381,38 +363,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF2D4646278194890023A17B /* WalkRunCycleVC.swift in Sources */,
-				BFF99DC92781BCC3001D56B6 /* FWEndWorkoutButton.swift in Sources */,
 				BF2732D92775216500535724 /* FoodCell.swift in Sources */,
 				BF2732D72775215800535724 /* FoodViewController.swift in Sources */,
 				BF195079277CBA43002B72F0 /* SettingVC.swift in Sources */,
-				BFF99DCD2781C3F0001D56B6 /* WorkoutWalkTableViewCell.swift in Sources */,
 				BFCA7B502778986F00C95D09 /* Items.swift in Sources */,
-				BFF6DF4D277F227700341B5A /* Habit.swift in Sources */,
-				BF5ED6BA276B2DCC00168689 /* MapViewController.swift in Sources */,
+				BF8C674F2785F5F200CDB60F /* BuildingRecipesViewController.swift in Sources */,
 				BF62A8D1277991DF004B0F82 /* MainTF.swift in Sources */,
 				BFCA7B4C27788F8A00C95D09 /* DetailVC.swift in Sources */,
 				BF54067D27676F7C00B118B6 /* VideoWorkoutViewController.swift in Sources */,
 				BFDA13E6275D4F4C007C22B1 /* AppDelegate.swift in Sources */,
+				BF5688D027861CD400E83FC1 /* MapViewController.swift in Sources */,
 				BFCA7B4E27788F9800C95D09 /* ProfileTableViewController.swift in Sources */,
-				BFF6DF51277F230800341B5A /* Reminder.swift in Sources */,
 				BF2732D0277520D100535724 /* SignUpViewController.swift in Sources */,
 				BF19507B277CBA6E002B72F0 /* profile.swift in Sources */,
+				BF8C674D2785F39B00CDB60F /* BMIViewController.swift in Sources */,
 				BF5ED6C4276B314300168689 /* Utilities.swift in Sources */,
 				BF195071277CBA0D002B72F0 /* newPasswordTF.swift in Sources */,
+				BFF928A12785D0A600C11BB8 /* CalorieCalculator.swift in Sources */,
 				BF4EEEC02782436500D64281 /* Users.swift in Sources */,
-				BFF99DD22781CC69001D56B6 /* HabitTableViewCell.swift in Sources */,
 				BF91E2B7277B43C000BFF170 /* ForgotPasswordVC.swift in Sources */,
 				BF2732DE2775223300535724 /* viewControllerSection.swift in Sources */,
-				BFF99DCB2781BCCB001D56B6 /* FWPauseWorkoutButton.swift in Sources */,
 				BF2732D2277520D900535724 /* SignUpSelection.swift in Sources */,
 				BF19507F277CD699002B72F0 /* HomeVC.swift in Sources */,
 				BFDA13E8275D4F4C007C22B1 /* SceneDelegate.swift in Sources */,
 				BF195083277CD754002B72F0 /* HomeCollectionViewCell.swift in Sources */,
 				BF2732BF27751F0700535724 /* GenderVC.swift in Sources */,
-				BFF6DF4B277F226E00341B5A /* WorkoutViewController.swift in Sources */,
 				BFE484092782EC290008FC3A /* SettingTableViewCell.swift in Sources */,
-				BFF6DF4F277F228500341B5A /* HistoryViewController.swift in Sources */,
 				BF5ED6C6276B315600168689 /* Constants.swift in Sources */,
 				BF2732C327751F1800535724 /* ExerciseVC.swift in Sources */,
 				BF2732CE277520CB00535724 /* LoginViewController.swift in Sources */,

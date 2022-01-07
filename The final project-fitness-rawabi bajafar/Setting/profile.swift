@@ -102,7 +102,8 @@ class ProfileVC: UIViewController  {
     self.dataOfBirth = self.dateOfBirthTF.text!
     
     db.collection("users").document(Auth.auth().currentUser!.uid).updateData([
-      "firstname": self.firstName, "lastname": self.lastName,"weight":self.weight,"height":self.height,"DateOfBirth":self.dataOfBirth]) { err in
+      "firstname": self.firstName, "lastname": self.lastName,"weight":self.weight,"height":self.height,"DateOfBirth":self.dataOfBirth])
+    { err in
         if let err = err {
           print("\n\n\n*******Error updating document: \(err)")
         } else {

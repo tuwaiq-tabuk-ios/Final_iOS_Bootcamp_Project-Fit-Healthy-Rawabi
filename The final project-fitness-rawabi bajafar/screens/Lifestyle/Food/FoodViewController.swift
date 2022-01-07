@@ -7,7 +7,14 @@
 
 import UIKit
 
-class FoodViewController: UIViewController{
+class FoodViewController: UIViewController, UISearchControllerDelegate{
+  
+  let searchController = UISearchController()
+  @IBOutlet var foodSearch: UISearchBar!
+  
+  var Array = [Food]()
+  //let deta = ["breakfast","lunch","Snack","dinner"]
+  var filteredData:[String] = []
   
   var count = 0
   
@@ -38,10 +45,11 @@ class FoodViewController: UIViewController{
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    //Array = deta
     // Do any additional setup after loading the view.
     healthyFood.dataSource = self
     healthyFood.delegate = self
+    searchController.delegate = self
   }
   
 }
@@ -52,17 +60,20 @@ extension FoodViewController: UITableViewDataSource , UITableViewDelegate{
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return array.count
+  
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell") as! FoodCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell") as!
+    FoodCell
     
     let currentFood = array[indexPath.row]
     cell.FoodNameLabel.text = currentFood.name
     cell.FoodImageView.image = currentFood.image
     cell.FoodImageView.layer.cornerRadius = cell.FoodImageView.frame.width/2
-    
+    //cell.textLabel?.text = filteredData[indexPath.row]
     return cell
+    
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -84,3 +95,44 @@ extension FoodViewController: UITableViewDataSource , UITableViewDelegate{
   }
   
 }
+//
+//extension FoodViewController: UITableViewDataSource , UITableViewDelegate{
+//
+//  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//    return filteredData.count
+//  }
+//
+//  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for:indexPath)
+//
+//cell.textLabel?.text = filteredData[indexPath.row]
+//
+//return cell
+
+
+extension FoodViewController:UISearchBarDelegate
+{
+  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
+    
+    filteredData = []
+   
+    if searchText == ""
+    {
+      //filteredData = deta
+    }
+     // for word in deta
+    //{
+     
+     // if word.uppercased().contains(searchText.uppercased())
+      //{
+       // filteredData.append(word)
+      
+      }
+  }
+
+    //self.tableView.r
+//}
+
+//}
+
+
