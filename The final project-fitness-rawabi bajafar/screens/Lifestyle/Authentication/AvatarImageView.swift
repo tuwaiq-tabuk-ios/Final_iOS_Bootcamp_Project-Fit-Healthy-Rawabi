@@ -10,8 +10,11 @@ import UIKit
 @IBDesignable
 class AvatarImageView: UIImageView {
     override init(image: UIImage?) {
-        super.init(image: image)
+        
+      super.init(image: image)
         configureView()
+    
+      
     }
     
     override init(frame: CGRect) {
@@ -37,5 +40,8 @@ class AvatarImageView: UIImageView {
     
     override func prepareForInterfaceBuilder() {
         configureView()
+      
+     
     }
+
 }

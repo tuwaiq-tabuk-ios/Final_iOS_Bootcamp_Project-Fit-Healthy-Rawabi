@@ -45,6 +45,8 @@ class FoodViewController: UIViewController, UISearchControllerDelegate{
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
     //Array = deta
     // Do any additional setup after loading the view.
     healthyFood.dataSource = self

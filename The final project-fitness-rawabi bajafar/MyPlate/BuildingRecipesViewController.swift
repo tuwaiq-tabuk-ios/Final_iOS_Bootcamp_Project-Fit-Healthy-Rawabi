@@ -1,6 +1,4 @@
 //
-//  BuildingRecipesViewController.swift
-//  Copyright © 2018 CS329E. All rights reserved.
 //
 
 import UIKit
@@ -20,7 +18,9 @@ class BuildingRecipesViewController: UIViewController, UIPickerViewDelegate, UIP
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ingredientPickerView.delegate = self
+      overrideUserInterfaceStyle = .light
+      navigationItem.setHidesBackButton(true, animated: true)
+      ingredientPickerView.delegate = self
         ingredientPickerView.dataSource = self
     }
     

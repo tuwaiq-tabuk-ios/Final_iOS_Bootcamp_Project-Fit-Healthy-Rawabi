@@ -28,6 +28,8 @@ class SearchResultsController : UIViewController, WKUIDelegate  {
   override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
     webView.frame = view.bounds
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
   }
   
 }

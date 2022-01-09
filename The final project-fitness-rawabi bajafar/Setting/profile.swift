@@ -36,7 +36,8 @@ class ProfileVC: UIViewController  {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
     //    EmailTF.text = users1?.email
     //    firstnameTF.text = users1?.firstname
     //    lastnameTF.text = users1?.lastname

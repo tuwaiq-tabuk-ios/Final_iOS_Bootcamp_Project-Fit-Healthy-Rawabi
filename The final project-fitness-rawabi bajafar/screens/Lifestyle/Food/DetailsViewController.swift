@@ -23,6 +23,8 @@ class DetailsViewController: UIViewController {
  
   override func viewDidLoad() {
         super.viewDidLoad()
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
     //getSpotsData()
     
     FoodNameLabel.text = food.name

@@ -1,7 +1,5 @@
 //
-//  BMIViewController.swift
-//  Copyright © 2018 CS329E. All rights reserved.
-//
+//  
 
 import UIKit
 //import CoreData
@@ -13,7 +11,9 @@ class BMIViewController: UIViewController {
     @IBOutlet weak var bmiGraphImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
+      overrideUserInterfaceStyle = .light
+      navigationItem.setHidesBackButton(true, animated: true)
+      self.hideKeyboardWhenTappedAround()
         bmiGraphImageView.image = UIImage(named: "boysChart")
         origWidth = bmiGraphImageView.frame.width;
         origHeight = bmiGraphImageView.frame.height;

@@ -22,7 +22,9 @@ class ProfileTableViewController: UITableViewController {
   @IBOutlet weak var avatarImageView: AvatarImageView!
   override func viewDidLoad() {
         super.viewDidLoad()
-
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
+    
    avatarImageView.layer.masksToBounds = false
    avatarImageView.layer.cornerRadius = avatarImageView.frame.height/2
     avatarImageView.clipsToBounds = true

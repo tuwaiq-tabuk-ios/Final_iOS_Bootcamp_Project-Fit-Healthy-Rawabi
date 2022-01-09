@@ -14,6 +14,9 @@ class SignUpSelection: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+      navigationItem.backButtonTitle = ""
+      overrideUserInterfaceStyle = .light
+      navigationItem.setHidesBackButton(true, animated: true)
     }
   @IBAction func FemaleButton(_ sender: Any) {
   

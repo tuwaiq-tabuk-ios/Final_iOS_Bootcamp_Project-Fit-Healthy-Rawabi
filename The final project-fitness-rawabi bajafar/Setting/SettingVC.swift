@@ -26,7 +26,8 @@ class SettingVC: UIViewController{
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.backButtonTitle = ""
-    
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
   }
  
   @IBAction func editeProfile(_ sender: Any) {
@@ -48,22 +49,60 @@ class SettingVC: UIViewController{
       }
     }
       
-  @IBAction func SignOut(_ sender: Any) {
+  @IBAction func SignOut(_ sender: UIBarButtonItem) {
     
-    let firebaseAuth = Auth.auth()
-        do {
-          try firebaseAuth.signOut()
-          self.navigationController?.popToRootViewController(animated: true)
-          print("signOut")
-        } catch let signOutError as NSError {
-          print("Error signing out: %@", signOutError)
-
-  }
+    
+    do{
+      try Auth.auth().signOut()
+      self.navigationController?.popViewController(animated: true)
+    }catch{print("Error")}
  
-      
+    
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "signOutSegue") as! ExerciseVC
+    self.present(nextViewController, animated:true, completion:nil)
+    //self.navigationController?.pushViewController(nextViewController, animated: true)
+    
+    
+//    UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "signOutSegue") as! ExerciseVC
+//    self.present(nextViewController, animated:true, completion:nil)
 
-  }
-}
+          
+  
+  
+    
+   
+          
+          
+    
+    
+    
+    
+    
+    
+    
+//          //performSegue(withIdentifier: "signOutSegue", sender: nil)
+//
+//
+//          let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//          let nextViewController = storyBoard.instantiateViewController(withIdentifier: "signOutSegue") as! ExerciseVC
+//          //self.navigationController(nextViewController, animated:true, completion:nil)
+//          navigationController?.pushViewController(nextViewController, animated: true)
+//
+//        } catch {
+//          print(error)
+//        }
+//    func logoutUser() {
+//        // call from any screen
+//        
+//        do { try Auth.auth().signOut() }
+//        catch { print("already logged out") }
+//        
+//        navigationController?.popToRootViewController(animated: true)
+//    
+//    }
+
 
 
     
@@ -102,3 +141,5 @@ class SettingVC: UIViewController{
 //      print("Error signing out: %@", signOutError)
 
 
+}
+}
