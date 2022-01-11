@@ -36,7 +36,8 @@ class ProfileVC: UIViewController  {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
     //    EmailTF.text = users1?.email
     //    firstnameTF.text = users1?.firstname
     //    lastnameTF.text = users1?.lastname
@@ -102,7 +103,8 @@ class ProfileVC: UIViewController  {
     self.dataOfBirth = self.dateOfBirthTF.text!
     
     db.collection("users").document(Auth.auth().currentUser!.uid).updateData([
-      "firstname": self.firstName, "lastname": self.lastName,"weight":self.weight,"height":self.height,"DateOfBirth":self.dataOfBirth]) { err in
+      "firstname": self.firstName, "lastname": self.lastName,"weight":self.weight,"height":self.height,"DateOfBirth":self.dataOfBirth])
+    { err in
         if let err = err {
           print("\n\n\n*******Error updating document: \(err)")
         } else {

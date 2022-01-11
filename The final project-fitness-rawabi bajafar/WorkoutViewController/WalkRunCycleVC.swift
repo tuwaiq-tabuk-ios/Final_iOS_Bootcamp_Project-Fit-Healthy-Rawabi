@@ -40,51 +40,21 @@ class WalkRunCycleVC: UIViewController {
   
   @IBOutlet var paceLabel: UILabel!
   
-  func getReady() {
-    
-    gettingStartedView.frame = view.frame
-    
-    walkRunCycleView.addSubview(gettingStartedView)
-    
-    let _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-      DispatchQueue.main.async {
-        self.gettingReadyLabel.text = "\(self.gettingReadyCount)"
-      }
-      
-      self.gettingReadyCount = self.gettingReadyCount - 1
-      
-      if self.gettingReadyCount == 0 {
-        DispatchQueue.main.async {
-          let font = UIFont.systemFont(ofSize: 96)
-          self.gettingReadyLabel.font = font
-          self.gettingReadyLabel.text = "Ready"
-        }
-      }
-    }
-    
-    
-    
-  }
-  
-  func setupRunPedometer() {
-      
-  }
+ 
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    let _ = Timer.scheduledTimer(withTimeInterval: 4, repeats: false) { timer in
-        self.gettingStartedView.isHidden = true
-        
-    }
     
-//    self.durationTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(durationCounter), userInfo: nil, repeats: true)
     
-}
 
-    
+
+  
+
   }
+  @IBAction func pause(_ sender: Any) {
+  }
+
+
+  @IBOutlet var End: UIStackView!
   
-//  @IBAction func Pause(_ sender: Any) {
- // }
-  
-//}
+}

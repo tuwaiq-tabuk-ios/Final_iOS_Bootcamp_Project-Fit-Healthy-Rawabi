@@ -21,9 +21,12 @@ class LoginViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    emailTextField.text = "test12389@gmail.com"
-    passwordTextField.text = "123_$Ff3"
-    
+    self.Keyboard()
+    emailTextField.text = "test123899@gmail.com"
+    passwordTextField.text = "Rr12345678_$"
+    navigationItem.backButtonTitle = ""
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
     // Do any additional setup after loading the view.
     
     setUpElements()

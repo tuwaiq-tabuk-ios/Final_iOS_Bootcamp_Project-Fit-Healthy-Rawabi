@@ -37,6 +37,7 @@ class SignUpViewController: UIViewController {
   @IBOutlet var confirmTextField: MainTF!
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.Keyboard()
     firstNameTextField.text = "rawabi"
     lastNameTextField.text = "Ahmed"
     emailTextField.text = "test1238@gmail.com"
@@ -48,6 +49,9 @@ class SignUpViewController: UIViewController {
     // Do any additional setup after loading the view.
     setUpElements()
     
+    navigationItem.backButtonTitle = ""
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
   }
   
   

@@ -12,12 +12,12 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
   
   @IBOutlet var collectionView: UICollectionView!
   var arrLabel = [
-                  UIImage(named: "FIT-1"),
-                  UIImage(named: "FIT5"),
-                  UIImage(named: "12-2"),
-                  UIImage(named: "11-2"),
-                  UIImage(named: "10]-2"),
-                  UIImage(named: "14-2")]
+    UIImage(named: "FIT-1"),
+    UIImage(named: "FIT5"),
+    UIImage(named: "12-2"),
+    UIImage(named: "11-2"),
+    UIImage(named: "10]-2"),
+    UIImage(named: "14-2")]
   @IBOutlet var startWorkoutButton: UIButton!
   
   
@@ -25,16 +25,18 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
   var currentCollIndex = 0
   
   override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
     collectionView.delegate = self
     collectionView.dataSource = self
-  PageController.numberOfPages = arrLabel.count
+    PageController.numberOfPages = arrLabel.count
     startTimer()
-    
+    navigationItem.backButtonTitle = ""
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
     // Do any additional setup after loading the view.
-    }
+  }
   @IBAction func startWorkoutButton(_ sender: Any) {
-  
+    
     print("Start Workout")
   }
   func startTimer(){
@@ -42,7 +44,7 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     
     timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(moveToNextIndex), userInfo: nil, repeats: true)
   }
- 
+  
   @objc func moveToNextIndex(){
     if currentCollIndex < arrLabel.count - 1{
       currentCollIndex += 1
@@ -52,9 +54,9 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
     
     
     collectionView.scrollToItem(at: IndexPath(item: currentCollIndex, section: 0), at: .centeredHorizontally, animated: true)
-  
+    
     PageController.currentPage = currentCollIndex
-  
+    
   }
   
   
@@ -65,15 +67,15 @@ class HomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSour
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCell", for: indexPath) as! HomeCollectionViewCell
     cell.imageProduct.image = arrLabel[indexPath.row]
-  return cell
+    return cell
   }
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
   }
-
+  
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
     0
   }
-
-
+  
+  
 }
