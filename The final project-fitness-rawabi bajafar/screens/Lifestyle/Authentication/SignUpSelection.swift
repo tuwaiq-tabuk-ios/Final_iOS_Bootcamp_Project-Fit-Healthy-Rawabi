@@ -9,17 +9,17 @@ import Foundation
 import UIKit
 
 class SignUpSelection: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-      navigationItem.backButtonTitle = ""
-      overrideUserInterfaceStyle = .light
-      navigationItem.setHidesBackButton(true, animated: true)
-    }
-  @IBAction func FemaleButton(_ sender: Any) {
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    // Do any additional setup after loading the view.
+    navigationItem.backButtonTitle = ""
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
+  }
+  @IBAction func FemaleButton(_ sender: Any) {
+    
     let vcc = storyboard?.instantiateViewController(withIdentifier: "Lifestyle")
     
     if let viewcontroller = vcc{
@@ -27,14 +27,14 @@ class SignUpSelection: UIViewController {
     }
   }
   @IBAction func MaleButton(_ sender: Any) {
-  
+    
     let vccc = storyboard?.instantiateViewController(withIdentifier: "Lifestyle")
     
     if let viewcontrollerr = vccc{
-
       
-            present(viewcontrollerr, animated: true, completion: nil)
-    
+      
+      present(viewcontrollerr, animated: true, completion: nil)
+      
     }
   }
   

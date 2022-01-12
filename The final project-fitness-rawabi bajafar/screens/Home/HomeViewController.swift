@@ -8,8 +8,8 @@ class HomeViewController: UIViewController {
     super.viewDidLoad()
     navigationItem.backButtonTitle = ""
     overrideUserInterfaceStyle = .light
+    
     navigationItem.setHidesBackButton(true, animated: true)
-    // Do any additional setup after loading the view.
   }
   
 }

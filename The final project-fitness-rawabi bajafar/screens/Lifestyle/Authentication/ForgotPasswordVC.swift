@@ -17,12 +17,12 @@ class ForgotPasswordVC: UIViewController{
   @IBOutlet var restButton: UIButton!
   
   override func viewDidLoad() {
- super.viewDidLoad()
+    super.viewDidLoad()
     navigationItem.backButtonTitle = ""
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
   }
-
   
-
+  
+  
 }

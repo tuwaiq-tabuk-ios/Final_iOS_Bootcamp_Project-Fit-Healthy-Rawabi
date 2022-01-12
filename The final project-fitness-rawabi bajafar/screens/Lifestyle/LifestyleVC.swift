@@ -24,10 +24,7 @@ class LifestyleVC: UIViewController {
     navigationItem.setHidesBackButton(true, animated: true)
   }
   
-  //  let db = Firestore.firestore()
-  //  db.collection("users").addDocument(data: ["Weight" : weight , "Height" : Height , "Age" : Age , "uid": result!.user.uid])
-  //
-  //
+  
   @IBAction func atHome(_ sender: Any) {
     let vc = storyboard?.instantiateViewController(withIdentifier: "HomeVC")
     if let viewVC = vc {

@@ -19,11 +19,7 @@ struct SettingsOption {
 
 class viewControllerSection: UIViewController, UITableViewDelegate,UITableViewDataSource {
   @IBOutlet var profile: UIButton!
-//  let vc = storyboard?.instantiateViewController(withIdentifier: "setting")
-//
-//  if let viewcontroler = vc{
-//    present(viewcontroler, animated: true, completion: nil)
-//  }
+  
   
   
   private let tableView: UITableView = {
@@ -35,7 +31,7 @@ class viewControllerSection: UIViewController, UITableViewDelegate,UITableViewDa
   var models = [Section]()
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
     
     configure()
     title = "Account Setting"
@@ -63,19 +59,19 @@ class viewControllerSection: UIViewController, UITableViewDelegate,UITableViewDa
     models.append(Section(title: "Account Setting", options:
                             
                             [SettingsOption(title: "profile", icon:UIImage(systemName: "person")!,iconBackgroundColor:.systemGray2){
-    
+      
     },
-                            SettingsOption(title: "language", icon: UIImage(systemName: "globe")!, iconBackgroundColor: .systemGray2){
+                             SettingsOption(title: "language", icon: UIImage(systemName: "globe")!, iconBackgroundColor: .systemGray2){
       print("Tapped first cell")
     },
-                            
+                             
                              
                              SettingsOption(title: "Update mobile number", icon: UIImage(systemName: "iphone")!, iconBackgroundColor: .systemGray2) {
     },
                              SettingsOption(title: "Change Password", icon: UIImage(systemName: "lock")!, iconBackgroundColor: .systemGray2) {
     },
                              SettingsOption(title:"help",icon: UIImage(systemName: "wrench")!, iconBackgroundColor: .systemGray2){
-    
+      
     }
                             ]))
   }
@@ -105,18 +101,18 @@ class viewControllerSection: UIViewController, UITableViewDelegate,UITableViewDa
   
   
   
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
     let model = models[indexPath.section].options[indexPath.row]
     model.handler()
-  
+    
   }
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 50
-   
+    
     
   }
-
-
+  
+  
 }
 

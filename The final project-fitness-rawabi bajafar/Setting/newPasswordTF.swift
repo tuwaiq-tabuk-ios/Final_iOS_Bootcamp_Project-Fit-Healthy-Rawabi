@@ -5,7 +5,7 @@ import FirebaseFirestore
 
 class newPasswordTF : UIViewController {
   let db = Firestore.firestore()
- 
+  
   @IBOutlet var newPasswordTF: MainTF!
   @IBOutlet weak var saveBotn: UIButton!
   
@@ -13,7 +13,7 @@ class newPasswordTF : UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
     let user =  Auth.auth().currentUser
     print(user?.uid)
     if let currentUser = user {
@@ -25,14 +25,14 @@ class newPasswordTF : UIViewController {
         else{
           let data = doc!.data()!
           
-        
-        
+          
+          
           self.newPasswordTF.text = self.Password
+        }
       }
     }
   }
-}
-
+  
   @IBAction func newPassword(_ sender: Any) {
     Auth.auth().currentUser?.updatePassword(to: newPasswordTF.text!) { [self] error in
       if error == nil{

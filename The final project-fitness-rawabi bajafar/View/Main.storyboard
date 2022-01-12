@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p6N-Od-rmr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-102.33644859813083" y="-485.31317494600438"/>
+            <point key="canvasLocation" x="-551" y="-468"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="dSz-rk-vmh">
@@ -342,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2so-7x-D1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="264" y="262"/>
+            <point key="canvasLocation" x="217" y="235"/>
         </scene>
         <!--ExerciseVC-->
         <scene sceneID="arI-Jv-y8J">
@@ -422,7 +422,7 @@
                     </items>
                 </navigationBar>
             </objects>
-            <point key="canvasLocation" x="-2201.449275362319" y="-467.41071428571428"/>
+            <point key="canvasLocation" x="-1939" y="-468"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="exV-qY-5ks">
@@ -441,7 +441,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wj8-q1-7U8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3204" y="-467"/>
+            <point key="canvasLocation" x="-2748" y="-467"/>
         </scene>
         <!--LifestyleVC-->
         <scene sceneID="x4c-Aa-xE7">
@@ -583,7 +583,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYS-hx-d3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-499" y="262"/>
+            <point key="canvasLocation" x="-524" y="235"/>
         </scene>
         <!--Tab BarVC-->
         <scene sceneID="fwC-SJ-qgP">
@@ -618,10 +618,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PcP-8M-NUT">
-                                <rect key="frame" x="0.0" y="44" width="428" height="578"/>
+                                <rect key="frame" x="0.0" y="44" width="428" height="567"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="578" id="HPB-Sh-Ofj"/>
+                                    <constraint firstAttribute="height" constant="567" id="HPB-Sh-Ofj"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FlP-E5-gHU">
                                     <size key="itemSize" width="418" height="469"/>
@@ -631,7 +631,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCell" id="3sZ-zQ-tPt" customClass="HomeCollectionViewCell" customModule="The_final_project_fitness_rawabi_bajafar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="54.666666666666664" width="418" height="469"/>
+                                        <rect key="frame" x="0.0" y="49" width="418" height="469"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fZR-UA-pl7">
                                             <rect key="frame" x="0.0" y="0.0" width="418" height="469"/>
@@ -655,13 +655,9 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-ZP-Sk3">
-                                <rect key="frame" x="119.66666666666669" y="656" width="189" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-ZP-Sk3">
+                                <rect key="frame" x="120" y="619" width="189" height="36"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="189" id="YaC-Qv-0ch"/>
-                                    <constraint firstAttribute="height" constant="36" id="sZY-00-pyd"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="BMI Calculator ">
@@ -673,17 +669,13 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="tix-ao-yy3">
-                                <rect key="frame" x="152" y="597" width="112.66666666666669" height="25"/>
+                                <rect key="frame" x="158" y="586" width="112.66666666666669" height="25"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oi-Jg-cSN">
-                                <rect key="frame" x="119.66666666666669" y="700" width="189" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oi-Jg-cSN">
+                                <rect key="frame" x="120" y="663" width="189" height="36"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="DEc-cj-BJ3"/>
-                                    <constraint firstAttribute="width" constant="189" id="INM-IC-H7r"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Calorie Counter">
@@ -694,20 +686,37 @@
                                     <segue destination="6c5-na-zoB" kind="show" id="LcN-kK-pgn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApU-bF-3i0">
+                                <rect key="frame" x="120" y="707" width="189" height="36"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="ToDoListItem">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startWorkoutButton:" destination="b1y-cn-4EK" eventType="touchUpInside" id="hMH-wq-NMe"/>
+                                    <segue destination="6jU-Cf-H21" kind="show" id="GAV-0P-nrn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vK6-ty-XOy"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
+                            <constraint firstItem="gc2-ZP-Sk3" firstAttribute="leading" secondItem="8Oi-Jg-cSN" secondAttribute="leading" id="3dm-2K-5hg"/>
                             <constraint firstItem="PcP-8M-NUT" firstAttribute="leading" secondItem="Fdr-83-oLg" secondAttribute="leading" id="3g2-Nc-GeO"/>
-                            <constraint firstItem="gc2-ZP-Sk3" firstAttribute="trailing" secondItem="8Oi-Jg-cSN" secondAttribute="trailing" id="51y-Cb-gl1"/>
+                            <constraint firstItem="gc2-ZP-Sk3" firstAttribute="top" secondItem="tix-ao-yy3" secondAttribute="bottom" constant="8" id="9XR-le-Wss"/>
                             <constraint firstItem="PcP-8M-NUT" firstAttribute="top" secondItem="vK6-ty-XOy" secondAttribute="top" id="Ev5-P9-f5l"/>
-                            <constraint firstItem="tix-ao-yy3" firstAttribute="centerX" secondItem="PcP-8M-NUT" secondAttribute="centerX" constant="-5.6666666666666856" id="GhS-07-Ty0"/>
+                            <constraint firstItem="tix-ao-yy3" firstAttribute="centerX" secondItem="PcP-8M-NUT" secondAttribute="centerX" constant="0.33333333333334281" id="GhS-07-Ty0"/>
+                            <constraint firstItem="8Oi-Jg-cSN" firstAttribute="leading" secondItem="ApU-bF-3i0" secondAttribute="leading" id="PHz-TO-FPj"/>
+                            <constraint firstItem="ApU-bF-3i0" firstAttribute="top" secondItem="8Oi-Jg-cSN" secondAttribute="bottom" constant="8" id="RHM-Kf-pOF"/>
                             <constraint firstAttribute="trailing" secondItem="PcP-8M-NUT" secondAttribute="trailing" id="Snw-Ea-SAb"/>
-                            <constraint firstItem="gc2-ZP-Sk3" firstAttribute="centerX" secondItem="PcP-8M-NUT" secondAttribute="centerX" id="WyB-f4-hkZ"/>
-                            <constraint firstItem="gc2-ZP-Sk3" firstAttribute="top" secondItem="PcP-8M-NUT" secondAttribute="bottom" constant="34" id="ZbR-7R-SNb"/>
-                            <constraint firstItem="tix-ao-yy3" firstAttribute="top" secondItem="vK6-ty-XOy" secondAttribute="top" constant="553" id="eSz-Wg-9YE"/>
-                            <constraint firstItem="gc2-ZP-Sk3" firstAttribute="leading" secondItem="8Oi-Jg-cSN" secondAttribute="leading" id="h28-ID-fSb"/>
-                            <constraint firstItem="8Oi-Jg-cSN" firstAttribute="top" secondItem="gc2-ZP-Sk3" secondAttribute="bottom" constant="8" symbolic="YES" id="kay-vq-C9B"/>
+                            <constraint firstItem="8Oi-Jg-cSN" firstAttribute="trailing" secondItem="ApU-bF-3i0" secondAttribute="trailing" id="Uej-Ef-GvE"/>
+                            <constraint firstItem="gc2-ZP-Sk3" firstAttribute="trailing" secondItem="8Oi-Jg-cSN" secondAttribute="trailing" id="aO0-EM-4ne"/>
+                            <constraint firstItem="tix-ao-yy3" firstAttribute="top" secondItem="vK6-ty-XOy" secondAttribute="top" constant="542" id="eSz-Wg-9YE"/>
+                            <constraint firstItem="gc2-ZP-Sk3" firstAttribute="centerX" secondItem="PcP-8M-NUT" secondAttribute="centerX" id="oBS-bJ-lEH"/>
+                            <constraint firstItem="gc2-ZP-Sk3" firstAttribute="leading" secondItem="vK6-ty-XOy" secondAttribute="leading" constant="120" id="qSL-2Y-n88"/>
+                            <constraint firstItem="8Oi-Jg-cSN" firstAttribute="top" secondItem="gc2-ZP-Sk3" secondAttribute="bottom" constant="8" id="xe2-sn-U9O"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="WgV-Fc-cQ1"/>
@@ -1221,7 +1230,7 @@ link to  create a new password via email</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fGq-jW-hk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1295" y="237"/>
+            <point key="canvasLocation" x="-1232" y="235"/>
         </scene>
         <!--SettingVC-->
         <scene sceneID="7vJ-ji-Ian">
@@ -1237,6 +1246,10 @@ link to  create a new password via email</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tS-U4-tcJ">
                                         <rect key="frame" x="11" y="0.0" width="406" height="800"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_7056-2" translatesAutoresizingMaskIntoConstraints="NO" id="lL3-ce-6lO">
+                                                <rect key="frame" x="-11" y="0.0" width="428" height="777"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="sUo-d9-47O">
                                                 <rect key="frame" x="40" y="175" width="326" height="286"/>
                                                 <subviews>
@@ -1321,7 +1334,7 @@ link to  create a new password via email</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGT-Oy-Xhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4942" y="1778"/>
+            <point key="canvasLocation" x="4941.5887850467288" y="1777.9697624190067"/>
         </scene>
         <!--Edite Peofile-->
         <scene sceneID="b0u-3A-kiz">
@@ -1337,6 +1350,9 @@ link to  create a new password via email</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Qg-fm-axI">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="800"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_7056-2" translatesAutoresizingMaskIntoConstraints="NO" id="abV-ip-64c">
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="800"/>
+                                            </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="oqI-bE-Lh8">
                                                 <rect key="frame" x="40" y="98" width="348" height="590"/>
                                                 <subviews>
@@ -1409,8 +1425,12 @@ link to  create a new password via email</string>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="800" id="3dI-AV-eg8"/>
                                             <constraint firstItem="oqI-bE-Lh8" firstAttribute="leading" secondItem="0Qg-fm-axI" secondAttribute="leading" constant="40" id="6vF-RK-UeY"/>
+                                            <constraint firstAttribute="trailing" secondItem="abV-ip-64c" secondAttribute="trailing" id="PsZ-B6-0FQ"/>
                                             <constraint firstItem="oqI-bE-Lh8" firstAttribute="top" secondItem="0Qg-fm-axI" secondAttribute="top" constant="98" id="fdv-zr-Acj"/>
                                             <constraint firstAttribute="trailing" secondItem="oqI-bE-Lh8" secondAttribute="trailing" constant="40" id="gth-GU-0MY"/>
+                                            <constraint firstItem="abV-ip-64c" firstAttribute="leading" secondItem="0Qg-fm-axI" secondAttribute="leading" id="ld1-YB-nYm"/>
+                                            <constraint firstAttribute="bottom" secondItem="abV-ip-64c" secondAttribute="bottom" id="z2J-pz-Elw"/>
+                                            <constraint firstItem="abV-ip-64c" firstAttribute="top" secondItem="0Qg-fm-axI" secondAttribute="top" id="zpv-94-nJP"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1459,8 +1479,11 @@ link to  create a new password via email</string>
                                 <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-DR-ho5">
-                                        <rect key="frame" x="0.0" y="0.0" width="406" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="800"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_7056-2" translatesAutoresizingMaskIntoConstraints="NO" id="GbD-kl-pJs">
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="800"/>
+                                            </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9H-fn-qiW">
                                                 <rect key="frame" x="40" y="170" width="326" height="120"/>
                                                 <subviews>
@@ -1497,14 +1520,18 @@ link to  create a new password via email</string>
                                         </subviews>
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.92156862745098034" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="FSz-k7-Ajh" secondAttribute="trailing" constant="40" id="DtW-GC-3na"/>
+                                            <constraint firstAttribute="trailing" secondItem="FSz-k7-Ajh" secondAttribute="trailing" constant="62" id="DtW-GC-3na"/>
+                                            <constraint firstAttribute="trailing" secondItem="GbD-kl-pJs" secondAttribute="trailing" id="Eyb-Rp-uvT"/>
                                             <constraint firstItem="FSz-k7-Ajh" firstAttribute="leading" secondItem="mMk-DR-ho5" secondAttribute="leading" constant="40" id="IU7-i7-KGn"/>
                                             <constraint firstAttribute="height" constant="800" id="J5s-09-n3n"/>
-                                            <constraint firstAttribute="trailing" secondItem="a9H-fn-qiW" secondAttribute="trailing" constant="40" id="WFR-mY-J4j"/>
-                                            <constraint firstAttribute="width" constant="406" id="fwH-8V-ZBg"/>
+                                            <constraint firstAttribute="bottom" secondItem="GbD-kl-pJs" secondAttribute="bottom" id="Oe1-yX-jC4"/>
+                                            <constraint firstItem="GbD-kl-pJs" firstAttribute="leading" secondItem="mMk-DR-ho5" secondAttribute="leading" id="Rdt-Xe-7Ld"/>
+                                            <constraint firstAttribute="trailing" secondItem="a9H-fn-qiW" secondAttribute="trailing" constant="62" id="WFR-mY-J4j"/>
+                                            <constraint firstAttribute="width" constant="428" id="fwH-8V-ZBg"/>
                                             <constraint firstItem="a9H-fn-qiW" firstAttribute="leading" secondItem="mMk-DR-ho5" secondAttribute="leading" constant="40" id="fyG-kr-AWY"/>
                                             <constraint firstItem="FSz-k7-Ajh" firstAttribute="top" secondItem="a9H-fn-qiW" secondAttribute="bottom" constant="33" id="i9l-Nl-p52"/>
                                             <constraint firstItem="a9H-fn-qiW" firstAttribute="top" secondItem="mMk-DR-ho5" secondAttribute="top" constant="170" id="jWf-ir-wfI"/>
+                                            <constraint firstItem="GbD-kl-pJs" firstAttribute="top" secondItem="mMk-DR-ho5" secondAttribute="top" id="sgm-2d-T8g"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1512,7 +1539,7 @@ link to  create a new password via email</string>
                                     <constraint firstItem="mMk-DR-ho5" firstAttribute="top" secondItem="6Wl-K0-nc8" secondAttribute="top" id="7kz-1o-hTt"/>
                                     <constraint firstAttribute="trailing" secondItem="mMk-DR-ho5" secondAttribute="trailing" id="8F3-Sd-NqT"/>
                                     <constraint firstItem="mMk-DR-ho5" firstAttribute="leading" secondItem="6Wl-K0-nc8" secondAttribute="leading" id="SyP-yv-8mB"/>
-                                    <constraint firstAttribute="bottom" secondItem="mMk-DR-ho5" secondAttribute="bottom" id="j8v-D3-E4C"/>
+                                    <constraint firstAttribute="bottom" secondItem="mMk-DR-ho5" secondAttribute="bottom" constant="48" id="j8v-D3-E4C"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -1533,7 +1560,7 @@ link to  create a new password via email</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Bm-4Y-aLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5690" y="1778"/>
+            <point key="canvasLocation" x="5688.7850467289718" y="1777.9697624190067"/>
         </scene>
         <!--Setting-->
         <scene sceneID="Tu0-mf-Kws">
@@ -1848,66 +1875,6 @@ link to  create a new password via email</string>
             </objects>
             <point key="canvasLocation" x="-273.36448598130841" y="1777.9697624190067"/>
         </scene>
-        <!--BMI Table View-->
-        <scene sceneID="ik5-6O-Lru">
-            <objects>
-                <tableViewController id="nWa-xW-ezR" userLabel="BMI Table View" customClass="BMITableViewController" customModule="The_final_project_fitness_rawabi_bajafar" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="X0h-gD-eZE">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="K9H-e8-cf9">
-                            <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem title="Previous BMI Statistics" id="rQ4-HY-u0w">
-                                    <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="7du-nK-RtF">
-                                        <color key="tintColor" red="0.48287968999999997" green="0.67841846449999998" blue="0.43548044689999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </barButtonItem>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="yourMom" id="sSV-jM-Cou" customClass="BMITableViewCell" customModule="The_final_project_fitness_rawabi_bajafar" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88.666666030883789" width="428" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sSV-jM-Cou" id="A5R-aP-imL" customClass="BMITableViewCell" customModule="The_final_project_fitness_rawabi_bajafar" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52Y-vY-Fvp">
-                                            <rect key="frame" x="20" y="11" width="210" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ay-ey-bWT">
-                                            <rect key="frame" x="250" y="12" width="144" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="bmiLabel" destination="0ay-ey-bWT" id="y3S-Eg-jom"/>
-                                    <outlet property="timeLabel" destination="52Y-vY-Fvp" id="Oqv-iB-u2u"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="nWa-xW-ezR" id="m8c-RJ-Ymb"/>
-                            <outlet property="delegate" destination="nWa-xW-ezR" id="2nJ-j0-h8a"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Previous Statistics" id="tBN-0q-N0t"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e3s-21-uUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1158" y="1028"/>
-        </scene>
         <!--Building Recipes View Controller-->
         <scene sceneID="wB2-Ph-jVp">
             <objects>
@@ -2026,107 +1993,208 @@ link to  create a new password via email</string>
             </objects>
             <point key="canvasLocation" x="-1071.0280373831774" y="2459.6112311015122"/>
         </scene>
-        <!--Calorie Consume Catalog-->
-        <scene sceneID="fvG-c4-B7O">
+        <!--Navigation Controller-->
+        <scene sceneID="9yK-ET-tMf">
             <objects>
-                <viewController storyboardIdentifier="consumptionVC" title="Calorie Consume Catalog" id="p3c-dn-KEB" customClass="ConsumptionViewController" customModule="The_final_project_fitness_rawabi_bajafar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SYQ-Jr-2lD">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6jU-Cf-H21" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Jg4-5t-GQi"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="8Nu-pk-e8u">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i13-us-Vgg" kind="relationship" relationship="rootViewController" id="Jim-mO-8wF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VPp-Rj-Qod" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2202" y="2460"/>
+        </scene>
+        <!--My To Do List-->
+        <scene sceneID="srv-fm-93O">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="i13-us-Vgg" customClass="ItemsVC" customModule="The_final_project_fitness_rawabi_bajafar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="pB2-Ik-PvH">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.74997526410000004" green="0.90849846599999995" blue="0.93854272370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.74997526410000004" green="0.90849846599999995" blue="0.93854272370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="85" id="VIV-PO-lUb" customClass="ItemCell" customModule="The_final_project_fitness_rawabi_bajafar" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VIV-PO-lUb" id="ADa-1L-XFn">
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="85"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kGC-sR-Vwk">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="85"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.87565026020000003" blue="0.79758684719999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Cry-w7-Tsj" kind="show" identifier="showItem" id="zb8-a9-WAI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="i13-us-Vgg" id="UfF-IV-mAl"/>
+                            <outlet property="delegate" destination="i13-us-Vgg" id="On0-LD-bes"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My To Do List" id="dHX-iX-MLn">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Ba-MR-DDS">
+                            <connections>
+                                <action selector="addNewItem:" destination="i13-us-Vgg" id="7Su-wI-PVD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHP-Tl-oSO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="XkD-3R-JZs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="LootLogger" id="Tcm-9k-dBv"/>
+                    </items>
+                </navigationBar>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZhV-Z0-TxC">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="-2202.3364485981306" y="3284.4492440604754"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="wNW-XE-7b6">
+            <objects>
+                <viewController id="Cry-w7-Tsj" customClass="DetailViewController" customModule="The_final_project_fitness_rawabi_bajafar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ve3-cA-bBH">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Z8-hK-9Af">
-                                <rect key="frame" x="16" y="188" width="404" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodcell" rowHeight="80" id="dcF-7j-wqu" customClass="CustomConsumeCell" customModule="The_final_project_fitness_rawabi_bajafar" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="404" height="80"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dcF-7j-wqu" id="zf5-Hi-43K">
-                                            <rect key="frame" x="0.0" y="0.0" width="404" height="80"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uip-gR-wBM">
-                                                    <rect key="frame" x="8" y="6" width="167" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frw-ST-eh5">
-                                                    <rect key="frame" x="235" y="6" width="149" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="calLbl" destination="Frw-ST-eh5" id="MEY-i7-A65"/>
-                                            <outlet property="foodLbl" destination="Uip-gR-wBM" id="1g0-Pn-p2w"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLx-fX-xtD">
-                                <rect key="frame" x="43" y="103" width="343" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Consumed Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpu-VA-svw">
-                                <rect key="frame" x="43" y="430" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 Cal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9N-nv-bti">
-                                <rect key="frame" x="43" y="466" width="343" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Catalog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVL-zJ-eZn">
-                                <rect key="frame" x="43" y="44" width="343" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNc-Ze-Teo">
-                                <rect key="frame" x="43" y="542" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Add Calories"/>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iia-VW-nRh">
-                                <rect key="frame" x="43" y="152" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <segments>
-                                    <segment title="Breakfast"/>
-                                    <segment title="Lunch"/>
-                                    <segment title="Dinner"/>
-                                    <segment title="Snacks"/>
-                                </segments>
-                                <color key="tintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.44999998807907104" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_7075-2" translatesAutoresizingMaskIntoConstraints="NO" id="jzB-BW-yBR">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Ih-Z3-VFg">
+                                <rect key="frame" x="20" y="108" width="388" height="742"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HqW-BZ-t6B">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My To Do List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yB8-Fm-t83">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="18"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69M-kh-DF8">
+                                                <rect key="frame" x="113" y="0.0" width="275" height="18"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aep-mI-arp">
+                                        <rect key="frame" x="0.0" y="18" width="388" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsX-Ar-uxL" userLabel="Next goals">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="18"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MNy-Ns-ofg">
+                                                <rect key="frame" x="113" y="0.0" width="275" height="18"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <datePicker contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="NVz-qb-gCq">
+                                        <rect key="frame" x="0.0" y="36" width="388" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="EuR-Mh-JJV"/>
+                                        </constraints>
+                                    </datePicker>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6em-dr-W3n">
+                                        <rect key="frame" x="0.0" y="116" width="388" height="626"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8tA-MW-arb">
+                                                <rect key="frame" x="0.0" y="0.0" width="388" height="604"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="604" id="h6g-am-eYl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZI-qP-aUw">
+                                                <rect key="frame" x="0.0" y="579" width="388" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="DvM-4f-ewA"/>
+                                                </constraints>
+                                                <items>
+                                                    <barButtonItem title="Item" id="2B4-cW-3Vf"/>
+                                                </items>
+                                            </toolbar>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="5ZI-qP-aUw" secondAttribute="bottom" constant="3" id="9HU-i6-ON9"/>
+                                            <constraint firstAttribute="trailing" secondItem="8tA-MW-arb" secondAttribute="trailing" id="eap-VY-ncB"/>
+                                            <constraint firstItem="8tA-MW-arb" firstAttribute="leading" secondItem="6em-dr-W3n" secondAttribute="leading" id="fZB-VG-lYa"/>
+                                            <constraint firstItem="5ZI-qP-aUw" firstAttribute="trailing" secondItem="8tA-MW-arb" secondAttribute="trailing" id="gYk-ES-aP3"/>
+                                            <constraint firstItem="8tA-MW-arb" firstAttribute="top" secondItem="6em-dr-W3n" secondAttribute="top" id="joY-4R-zCa"/>
+                                            <constraint firstItem="5ZI-qP-aUw" firstAttribute="leading" secondItem="8tA-MW-arb" secondAttribute="leading" id="mAE-BZ-OPU"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="490" id="sy6-k7-uUT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="69M-kh-DF8" firstAttribute="height" secondItem="MNy-Ns-ofg" secondAttribute="height" id="2up-CZ-vQz"/>
+                                    <constraint firstItem="yB8-Fm-t83" firstAttribute="leading" secondItem="GsX-Ar-uxL" secondAttribute="leading" id="oN1-Ew-aaz"/>
+                                    <constraint firstItem="69M-kh-DF8" firstAttribute="width" secondItem="MNy-Ns-ofg" secondAttribute="width" id="qbX-Vm-ha1"/>
+                                    <constraint firstItem="69M-kh-DF8" firstAttribute="leading" secondItem="MNy-Ns-ofg" secondAttribute="leading" id="tiZ-yo-bey"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ksi-Qg-4vD"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ftw-ya-XYI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ftw-ya-XYI" firstAttribute="bottom" secondItem="jzB-BW-yBR" secondAttribute="bottom" id="GVS-Ve-zGw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Ih-Z3-VFg" secondAttribute="trailing" id="eOa-za-h9s"/>
+                            <constraint firstItem="ftw-ya-XYI" firstAttribute="trailing" secondItem="jzB-BW-yBR" secondAttribute="trailing" id="n1E-by-Kxj"/>
+                            <constraint firstItem="ftw-ya-XYI" firstAttribute="bottom" secondItem="3Ih-Z3-VFg" secondAttribute="bottom" constant="22" id="nRM-Nm-fa0"/>
+                            <constraint firstItem="jzB-BW-yBR" firstAttribute="leading" secondItem="ftw-ya-XYI" secondAttribute="leading" id="pKY-k7-won"/>
+                            <constraint firstItem="3Ih-Z3-VFg" firstAttribute="top" secondItem="Ve3-cA-bBH" secondAttribute="topMargin" id="qCk-p6-mQb"/>
+                            <constraint firstItem="3Ih-Z3-VFg" firstAttribute="leading" secondItem="Ve3-cA-bBH" secondAttribute="leadingMargin" id="qGR-du-4Oc"/>
+                            <constraint firstItem="jzB-BW-yBR" firstAttribute="top" secondItem="Ve3-cA-bBH" secondAttribute="top" id="qh6-dZ-Pm4"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Catalog" image="catalog" id="VDt-Hb-Odf">
-                        <inset key="imageInsets" minX="1" minY="1" maxX="1" maxY="1"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="h05-px-6jl"/>
+                    <connections>
+                        <outlet property="MyToDoList" destination="69M-kh-DF8" id="SO5-lg-Udn"/>
+                        <outlet property="Nextgoals" destination="MNy-Ns-ofg" id="Tip-L5-Me9"/>
+                        <outlet property="datePicker" destination="NVz-qb-gCq" id="j5f-5F-JpQ"/>
+                        <outlet property="imageView" destination="8tA-MW-arb" id="ze0-a7-qyN"/>
+                        <outlet property="toolbar" destination="5ZI-qP-aUw" id="gsp-lh-hgF"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uE9-q8-C1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eN3-IM-uOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wNa-Zh-pFD">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="Cry-w7-Tsj" id="RlV-Uh-sk9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1876" y="1003"/>
+            <point key="canvasLocation" x="-2202" y="3959"/>
         </scene>
     </scenes>
     <designables>
@@ -2163,7 +2231,7 @@ link to  create a new password via email</string>
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="rES-rq-CrJ"/>
-        <segue reference="X5j-fQ-QxF"/>
+        <segue reference="9cg-6v-VC0"/>
         <segue reference="Ubd-MI-Gfs"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -2171,11 +2239,12 @@ link to  create a new password via email</string>
         <image name="Amazoncom running" width="736" height="920"/>
         <image name="IMG_24CDD80E5188-1" width="1400" height="933"/>
         <image name="IMG_6480-2" width="736" height="736"/>
+        <image name="IMG_7056-2" width="750" height="1139"/>
+        <image name="IMG_7075-2" width="750" height="750"/>
         <image name="IMG_BDDA3DA2FFCE-1" width="1400" height="933"/>
         <image name="JPEG image-09C5D7F0B24E-1" width="1400" height="716"/>
         <image name="bowl" width="4000" height="1676"/>
         <image name="breakfast" width="1536" height="1024"/>
-        <image name="catalog" width="40" height="40"/>
         <image name="gear.badge.xmark" catalog="system" width="128" height="111"/>
         <image name="heart.text.square.fill" catalog="system" width="128" height="114"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>

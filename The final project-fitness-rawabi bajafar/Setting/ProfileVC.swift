@@ -46,7 +46,7 @@ class ProfileVC: UIViewController  {
     //    dateOfBirthTF.text = users1?.DateOfBirth
     
     
-    let user =  Auth.auth().currentUser
+    let user = Auth.auth().currentUser
     print(user?.uid)
     if let currentUser = user {
       db.collection("users").document(currentUser.uid).getDocument { doc, err in
@@ -79,7 +79,7 @@ class ProfileVC: UIViewController  {
     
     
   }
-    
+  
   @IBAction func sendProfile(_ sender: Any) {
     Auth.auth().currentUser?.updateEmail(to: EmailTF.text!) { [self] error in
       if error == nil{
@@ -105,12 +105,12 @@ class ProfileVC: UIViewController  {
     db.collection("users").document(Auth.auth().currentUser!.uid).updateData([
       "firstname": self.firstName, "lastname": self.lastName,"weight":self.weight,"height":self.height,"DateOfBirth":self.dataOfBirth])
     { err in
-        if let err = err {
-          print("\n\n\n*******Error updating document: \(err)")
-        } else {
-          print("\n\n\n*******Document successfully updated")
-        }
+      if let err = err {
+        print("\n\n\n*******Error updating document: \(err)")
+      } else {
+        print("\n\n\n*******Document successfully updated")
       }
+    }
     
     
   }
