@@ -9,11 +9,11 @@ import UIKit
 
 class ProfileTableViewController: UITableViewController {
 
-  let items: [Item] = [
-  Item(name: "Account", description: "Description item 0"),
-  Item(name: "Password", description: "Description item 1"),
-  Item(name: "Phone number", description: "Description item 2"), Item(name: "Language", description: "Description item 3"),
-  Item(name: "Username", description: "Description item 3")
+  let ProfileItems: [LifestyleItem] = [
+  LifestyleItem(name: "Account", description: "Description item 0"),
+  LifestyleItem(name: "Password", description: "Description item 1"),
+  LifestyleItem(name: "Phone number", description: "Description item 2"), LifestyleItem(name: "Language", description: "Description item 3"),
+  LifestyleItem(name: "Username", description: "Description item 3")
   ]
   
   var currentDescription: String = ""
@@ -59,7 +59,7 @@ setupContextMenu()
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-      return items.count
+      return ProfileItems.count
     }
 
     
@@ -67,7 +67,7 @@ setupContextMenu()
         let cell = tableView.dequeueReusableCell(withIdentifier: "reusable_cell", for: indexPath)
 
         // Configure the cell...
-      cell.textLabel?.text = items[indexPath.row].name
+      cell.textLabel?.text = ProfileItems[indexPath.row].name
        return cell
     }
     
@@ -118,7 +118,7 @@ setupContextMenu()
     */
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    currentDescription = items[indexPath.row].description
+    currentDescription = ProfileItems[indexPath.row].description
     performSegue(withIdentifier: "show_detail", sender: nil)
   }
   

@@ -15,10 +15,17 @@ class FoodViewController: UIViewController, UISearchControllerDelegate{
   var Array = [Food]()
   //let deta = ["breakfast","lunch","Snack","dinner"]
   var filteredData:[String] = []
+  var filteredStates = [Food]()
   
-  var count = 0
-  
-  var array =  [
+    var count = 0
+  var statess = [
+
+    states(stateName: "breakfast", abbreviation: "br" ),
+    states(stateName: "lunch", abbreviation: "lu" ),
+    states(stateName: "Arizona", abbreviation: "AZ")
+    ]
+
+          var array =  [
     Food(name: "breakfast",
          image: UIImage(named: "breakfast"),
          ingredients: ["3  tablespoons extra virgin olive oil", "2  onions, chopped", "1  tablespoon minced garlic", "3  dried chilies, optional","3  sprigs thyme or rosemary", "8  eggs", "3  cups chopped tomatoes (canned are fine)", "Salt and pepper",  "½Chopped parsley leaves for garnish"],
@@ -45,6 +52,7 @@ class FoodViewController: UIViewController, UISearchControllerDelegate{
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    //filteredStates = statess
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
     //Array = deta
@@ -128,13 +136,43 @@ extension FoodViewController:UISearchBarDelegate
      // if word.uppercased().contains(searchText.uppercased())
       //{
        // filteredData.append(word)
-      
+//    var statess = [
+//
+//      states(stateName: "breakfast", abbreviation: "br" ),
+//      states(stateName: "lunch", abbreviation: "lu" ),
+//      states(stateName: "Arizona", abbreviation: "AZ")
+//      ]
       }
-  }
+  
+}
 
-    //self.tableView.r
+//extension MainVC : UISearchBarDelegate {
+//    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+//        isSearching = true
+//    }
+//    
+//    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+//        isSearching = false
+//    }
+//    
+//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+//        isSearching = false
+//        searchBar.text = ""
+//        view.endEditing(true)
+//        self.itemsTableView.reloadData()
+//    }
+//    
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        if searchText == "" {
+//            isSearching = false
+//            self.itemsTableView.reloadData()
+//        } else {
+//            isSearching = true
+//            filterdItmes = items.filter({ item in
+//                return item.title!.lowercased().contains(searchText.lowercased())
+//            })
+//            self.itemsTableView.reloadData()
+//        }
+//    }
 //}
-
-//}
-
-
+//

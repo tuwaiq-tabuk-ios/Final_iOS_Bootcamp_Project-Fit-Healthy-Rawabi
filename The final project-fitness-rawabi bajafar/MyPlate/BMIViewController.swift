@@ -9,7 +9,10 @@ class BMIViewController: UIViewController {
     var origWidth:CGFloat = 0.0;
     var origHeight:CGFloat = 0.0;
     @IBOutlet weak var bmiGraphImageView: UIImageView!
-    override func viewDidLoad() {
+    var weightbody = "weight"
+  var heightbody =  "height"
+ 
+  override func viewDidLoad() {
         super.viewDidLoad()
       overrideUserInterfaceStyle = .light
       navigationItem.setHidesBackButton(true, animated: true)
@@ -18,8 +21,11 @@ class BMIViewController: UIViewController {
         origWidth = bmiGraphImageView.frame.width;
         origHeight = bmiGraphImageView.frame.height;
         // Do any additional setup after loading the view.
-    }
     
+  }
+    
+  
+  
     @IBAction func handlePinch(recognizer : UIPinchGestureRecognizer)  {
         if let view = recognizer.view {
             
@@ -66,9 +72,8 @@ class BMIViewController: UIViewController {
     @IBOutlet weak var ageTextField: UITextField!
     
     @IBOutlet weak var calculateButton: UIButton!
-    
+  
     @IBOutlet weak var showBMILabel: UILabel!
-    
     
     @IBAction func measurementSegmentedControlChanged(_ sender: Any) {
         

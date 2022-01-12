@@ -46,7 +46,7 @@ class ProfileVC: UIViewController  {
     //    dateOfBirthTF.text = users1?.DateOfBirth
     
     
-    let user =  Auth.auth().currentUser
+    let user = Auth.auth().currentUser
     print(user?.uid)
     if let currentUser = user {
       db.collection("users").document(currentUser.uid).getDocument { doc, err in
