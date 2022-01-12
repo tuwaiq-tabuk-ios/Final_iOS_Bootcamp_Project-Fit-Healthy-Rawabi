@@ -14,15 +14,6 @@ class GenderVC: UIViewController {
     navigationItem.backButtonTitle = ""
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
-    // Do any additional setup after loading the view.
-    
-    //      button.layer.borderWidth = 2
-    //    button.layer.borderColor = UIColor.lightGray.cgColor
-    //      button.layer.cornerRadius = 25.0
-    //      button.tintColor = UIColor.lightGray
-    //  }
-    //    }
-    //
     
     
   }

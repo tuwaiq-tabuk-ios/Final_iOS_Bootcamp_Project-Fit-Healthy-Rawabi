@@ -9,13 +9,13 @@
 import UIKit
 
 extension UIViewController {
-func Keyboard() {
-       let tap: UITapGestureRecognizer = UITapGestureRecognizer( target:     self, action:    #selector(UIViewController.dismissKeyboardTouchOutside))
-       tap.cancelsTouchesInView = false
-       view.addGestureRecognizer(tap)
-    }
-    
-    @objc private func dismissKeyboardTouchOutside() {
-       view.endEditing(true)
-    }
+  func Keyboard() {
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer( target:     self, action:    #selector(UIViewController.dismissKeyboardTouchOutside))
+    tap.cancelsTouchesInView = false
+    view.addGestureRecognizer(tap)
+  }
+  
+  @objc private func dismissKeyboardTouchOutside() {
+    view.endEditing(true)
+  }
 }

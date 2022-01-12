@@ -114,11 +114,7 @@ class SignUpViewController: UIViewController {
     
     if error != nil {
       
-      //      let vc = storyboard?.instantiateViewController(withIdentifier: "Lifestyle")
-      //      if let viewController = vc {
-      //        navigationController?.pushViewController(viewController, animated: true)
-      //      }
-      // There's something wrong with the fields, show error message
+      
       showError(error!)
     }
     else {
@@ -150,11 +146,11 @@ class SignUpViewController: UIViewController {
           let db = Firestore.firestore()
           let id = result?.user.uid
           db.collection("users").document(id!).setData(["firstname":firstName,
-              "lastname":lastName,
-              "weight":weight,
-              "height":height,
-              "DateOfBirth":DateOfBirth,
-              "uid":result!.user.uid ]) { (error) in
+                                                        "lastname":lastName,
+                                                        "weight":weight,
+                                                        "height":height,
+                                                        "DateOfBirth":DateOfBirth,
+                                                        "uid":result!.user.uid ]) { (error) in
             
             if error != nil {
               // Show error message
@@ -164,23 +160,23 @@ class SignUpViewController: UIViewController {
               self.transitionToHome()
             }
           }
-//          db.collection("users").addDocument(data: ["firstname":firstName,
-//                                                    "lastname":lastName,
-//                                                    // "password":password,
-//                                                    // "Confirm" : Confirm,
-//                                                    //"email" : email,
-//                                                    "weight":weight,
-//                                                    "height":height,
-//                                                    "DateOfBirth":DateOfBirth,
-//                                                    "uid": result!.user.uid ]) { (error) in
-//
-//            if error != nil {
-//              // Show error message
-//              self.showError("Error saving user data")
-//            }
-//          }
+          //          db.collection("users").addDocument(data: ["firstname":firstName,
+          //                                                    "lastname":lastName,
+          //                                                    // "password":password,
+          //                                                    // "Confirm" : Confirm,
+          //                                                    //"email" : email,
+          //                                                    "weight":weight,
+          //                                                    "height":height,
+          //                                                    "DateOfBirth":DateOfBirth,
+          //                                                    "uid": result!.user.uid ]) { (error) in
+          //
+          //            if error != nil {
+          //              // Show error message
+          //              self.showError("Error saving user data")
+          //            }
+          //          }
           // Transition to the home screen
-//          self.transitionToHome()
+          //          self.transitionToHome()
           
         }
         
