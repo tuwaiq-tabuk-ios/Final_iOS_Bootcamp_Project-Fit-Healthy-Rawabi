@@ -1,15 +1,12 @@
 //
-//  LoginViewController.swift
-//  CustomLoginDemo
-//
-//  Created by Christopher Ching on 2019-07-22.
-//  Copyright © 2019 Christopher Ching. All rights reserved.
-//
+//  
 
 import UIKit
 import FirebaseAuth
 
 class LoginViewController: UIViewController {
+  
+  // MARK: - IBOutlets
   
   @IBOutlet weak var emailTextField: UITextField!
   
@@ -19,8 +16,14 @@ class LoginViewController: UIViewController {
   
   @IBOutlet weak var errorLabel: UILabel!
   
+  
+  
+  
+  // MARK: - View controller lifecycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     self.Keyboard()
     emailTextField.text = "test123899@gmail.com"
     passwordTextField.text = "Rr12345678_$"
@@ -31,6 +34,10 @@ class LoginViewController: UIViewController {
     
     setUpElements()
   }
+  
+  
+  
+  // MARK: - Methods
   
   func setUpElements() {
     
@@ -46,6 +53,7 @@ class LoginViewController: UIViewController {
   
   
   
+  // MARK: - @IBAction
   
   @IBAction func loginTapped(_ sender: Any) {
     

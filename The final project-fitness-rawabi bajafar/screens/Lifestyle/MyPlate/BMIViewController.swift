@@ -6,11 +6,22 @@ import UIKit
 
 class BMIViewController: UIViewController {
   
+  // MARK: - Properties
+  
   var origWidth:CGFloat = 0.0;
   var origHeight:CGFloat = 0.0;
-  @IBOutlet weak var bmiGraphImageView: UIImageView!
   var weightbody = "weight"
   var heightbody =  "height"
+  
+  
+  
+  // MARK: - IBOutlets
+  
+  @IBOutlet weak var bmiGraphImageView: UIImageView!
+  
+  
+  
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -25,6 +36,8 @@ class BMIViewController: UIViewController {
   }
   
   
+  
+  // MARK: - @IBAction
   
   @IBAction func handlePinch(recognizer : UIPinchGestureRecognizer)  {
     if let view = recognizer.view {
@@ -45,30 +58,33 @@ class BMIViewController: UIViewController {
   
   
   
+  // MARK: - View controller lifecycle
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
   
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
   
+  
+  // MARK: - Properties
   
   var imperial:Bool = true;
   var male:Bool = true;
   
+  
+  
+  
+  // MARK: - IBOutlets
+  
   @IBOutlet weak var measurementSegmentedControl: UISegmentedControl!
+  
   @IBOutlet weak var genderSegmentedControl: UISegmentedControl!
   
   @IBOutlet weak var heightTextField: UITextField!
+  
   @IBOutlet weak var weightTextField: UITextField!
+  
   @IBOutlet weak var ageTextField: UITextField!
   
   @IBOutlet weak var calculateButton: UIButton!
@@ -76,6 +92,9 @@ class BMIViewController: UIViewController {
   @IBOutlet weak var showBMILabel: UILabel!
   
   @IBAction func measurementSegmentedControlChanged(_ sender: Any) {
+    
+    
+    
     
     imperial = !imperial;
     
@@ -91,6 +110,10 @@ class BMIViewController: UIViewController {
     }
     
   }
+  
+  
+  
+  // MARK: - @IBAction
   
   @IBAction func genderSegmentedControlChanged(_ sender: Any) {
     
@@ -197,6 +220,10 @@ class BMIViewController: UIViewController {
   }
   
 }
+
+
+
+// MARK: - Navigation
 
 extension UIViewController {
   func hideKeyboardWhenTappedAround() {

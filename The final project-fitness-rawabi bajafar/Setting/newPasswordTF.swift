@@ -4,12 +4,22 @@ import Firebase
 import FirebaseFirestore
 
 class newPasswordTF : UIViewController {
+  
+  // MARK: - Properties
+  
   let db = Firestore.firestore()
+  var Password = ""
+  
+  
+  
+  // MARK: - IBOutlets
   
   @IBOutlet var newPasswordTF: MainTF!
   @IBOutlet weak var saveBotn: UIButton!
   
-  var Password = ""
+  
+  
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -32,6 +42,10 @@ class newPasswordTF : UIViewController {
       }
     }
   }
+  
+  
+  
+  // MARK: - @IBAction
   
   @IBAction func newPassword(_ sender: Any) {
     Auth.auth().currentUser?.updatePassword(to: newPasswordTF.text!) { [self] error in

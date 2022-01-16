@@ -11,6 +11,8 @@ import UIKit
 
 class ItemStore {
   
+  // MARK: - Properties
+  
   static  var allItems = [Item]()
   
   let itemArchiveURL: URL = {
@@ -26,6 +28,9 @@ class ItemStore {
   }
   
   
+  
+  
+  // MARK: - Methods
   
   @objc func saveChanges () {
     do {

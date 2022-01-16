@@ -18,7 +18,6 @@
 		BF2732C127751F0F00535724 /* LifestyleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732C027751F0F00535724 /* LifestyleVC.swift */; };
 		BF2732C327751F1800535724 /* ExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732C227751F1800535724 /* ExerciseVC.swift */; };
 		BF2732C527751FC800535724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2732C427751FC800535724 /* Main.storyboard */; };
-		BF2732C727751FE400535724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2732C627751FE400535724 /* Assets.xcassets */; };
 		BF2732CB2775204800535724 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732CA2775204800535724 /* TabBarVC.swift */; };
 		BF2732CE277520CB00535724 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732CD277520CB00535724 /* LoginViewController.swift */; };
 		BF2732D0277520D100535724 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2732CF277520D100535724 /* SignUpViewController.swift */; };
@@ -58,6 +57,7 @@
 		BFDA13E6275D4F4C007C22B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA13E5275D4F4C007C22B1 /* AppDelegate.swift */; };
 		BFDA13E8275D4F4C007C22B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA13E7275D4F4C007C22B1 /* SceneDelegate.swift */; };
 		BFDA13F2275D4F4D007C22B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDA13F0275D4F4D007C22B1 /* LaunchScreen.storyboard */; };
+		BFDCC9342790453E00D65C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFDCC9332790453E00D65C00 /* Assets.xcassets */; };
 		BFE484092782EC290008FC3A /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE484082782EC290008FC3A /* SettingTableViewCell.swift */; };
 		BFF928A12785D0A600C11BB8 /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF928A02785D0A600C11BB8 /* CalorieCalculator.swift */; };
 /* End PBXBuildFile section */
@@ -74,7 +74,6 @@
 		BF2732C027751F0F00535724 /* LifestyleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifestyleVC.swift; sourceTree = "<group>"; };
 		BF2732C227751F1800535724 /* ExerciseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseVC.swift; sourceTree = "<group>"; };
 		BF2732C427751FC800535724 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		BF2732C627751FE400535724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../The final project-fitness-rawabi Ahmed bajafar/The final project-fitness-rawabi bajafar/Suport/Assets.xcassets"; sourceTree = "<group>"; };
 		BF2732CA2775204800535724 /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		BF2732CD277520CB00535724 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF2732CF277520D100535724 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		BFDA13E7275D4F4C007C22B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BFDA13F1275D4F4D007C22B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFDA13F3275D4F4D007C22B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFDCC9332790453E00D65C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE484082782EC290008FC3A /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		BFF928A02785D0A600C11BB8 /* CalorieCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF02091D2790485D00C816DB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BFDCC9332790453E00D65C00 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		BF2732B927751EBD00535724 /* screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +169,7 @@
 				BF2732C227751F1800535724 /* ExerciseVC.swift */,
 				BF8FA268278B0ABD0004766E /* Keyboard.swift */,
 				BF2732CC277520B800535724 /* Authentication */,
+				BF8C674B2785F38500CDB60F /* MyPlate */,
 				BF2732D32775213400535724 /* Food */,
 			);
 			path = Lifestyle;
@@ -206,9 +215,9 @@
 		BF3FC000276942BC000933A8 /* Suport */ = {
 			isa = PBXGroup;
 			children = (
-				BF2732C627751FE400535724 /* Assets.xcassets */,
 				BFDA13E5275D4F4C007C22B1 /* AppDelegate.swift */,
 				BFDA13E7275D4F4C007C22B1 /* SceneDelegate.swift */,
+				BF02091D2790485D00C816DB /* Assets */,
 				BFDA13F0275D4F4D007C22B1 /* LaunchScreen.storyboard */,
 				BF816379276B4F9400BEDD43 /* GoogleService-Info.plist */,
 			);
@@ -295,7 +304,6 @@
 			isa = PBXGroup;
 			children = (
 				BF2732B927751EBD00535724 /* screens */,
-				BF8C674B2785F38500CDB60F /* MyPlate */,
 				BF3FC01A27694A2F000933A8 /* View */,
 				BF2732DC2775220E00535724 /* VideoWorkoutViewController */,
 				BF3FC01827694A00000933A8 /* Setting */,
@@ -387,7 +395,7 @@
 				BFDA13F2275D4F4D007C22B1 /* LaunchScreen.storyboard in Resources */,
 				BF2732C527751FC800535724 /* Main.storyboard in Resources */,
 				BF81637A276B4F9400BEDD43 /* GoogleService-Info.plist in Resources */,
-				BF2732C727751FE400535724 /* Assets.xcassets in Resources */,
+				BFDCC9342790453E00D65C00 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,15 +6,21 @@
 //
 
 import Foundation
-
 import UIKit
+
 class ForgotPasswordVC: UIViewController{
   
+  // MARK: - IBOutlets
   
   @IBOutlet var emilContainerView: UIView!
+  
   @IBOutlet var emilTextField: UITextField!
   
   @IBOutlet var restButton: UIButton!
+  
+  
+  
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()

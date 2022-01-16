@@ -7,14 +7,24 @@ var calorieCount = 0
 var selectedCalorieRow = 0
 
 class BuildingRecipesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+  
+  // MARK: - Properties
+  
   let items = ["Beans", "Beef", "Broccoli", "Chicken Breast", "Eggs", "Fish", "Onions", "Potatoes", "Rice", "Spaghetti", "Tomatoes"]
   let calories = [42, 213, 110, 206, 211, 211, 46, 116, 270, 221, 32]
   
+  
+  
+  // MARK: - IBOutlets
   
   @IBOutlet weak var bowlImageView: UIImageView!
   @IBOutlet weak var ingredientsTextView: UITextView!
   @IBOutlet weak var ingredientPickerView: UIPickerView!
   @IBOutlet weak var calorieCountLabel: UILabel!
+  
+  
+  
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,6 +33,10 @@ class BuildingRecipesViewController: UIViewController, UIPickerViewDelegate, UIP
     ingredientPickerView.delegate = self
     ingredientPickerView.dataSource = self
   }
+  
+  
+  
+  // MARK: - Methods
   
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return 1
@@ -68,6 +82,8 @@ class BuildingRecipesViewController: UIViewController, UIPickerViewDelegate, UIP
   }
   
   
+  
+  // MARK: - @IBAction
   
   @IBAction func addItemButton(_ sender: UIButton) {
     calorieCount += calories[selectedCalorieRow]

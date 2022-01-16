@@ -6,13 +6,19 @@
 //
 
 import Foundation
-
 import UIKit
+import Firebase
 
 class ItemsVC: UITableViewController {
   
+  // MARK: - Properties
+  
   var itemStore: ItemStore!
   var imageStore: ImageStore!
+  
+  
+  
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,6 +30,9 @@ class ItemsVC: UITableViewController {
     
   }
   
+  
+  
+  // MARK: - @IBAction
   
   @IBAction func addNewItem(_ sender: UIBarButtonItem) {
     
@@ -45,7 +54,7 @@ class ItemsVC: UITableViewController {
   
   
   
-  // MARK: - Table view data source
+  // MARK: - Methods
   
   func isBiggerThan50(value: Int)
   -> Bool{
@@ -55,7 +64,7 @@ class ItemsVC: UITableViewController {
     return false
   }
   
-  
+  // MARK: - Table view data source
   
   override func numberOfSections(in tableView: UITableView) -> Int {
     // #warning Incomplete implementation, return the number of sections
@@ -93,7 +102,7 @@ class ItemsVC: UITableViewController {
     }
   }
   
-  // MARK: - Navigation
+  
   
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

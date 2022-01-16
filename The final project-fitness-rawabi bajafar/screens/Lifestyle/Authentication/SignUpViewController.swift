@@ -1,9 +1,4 @@
-//
-//  SignUpViewController.swift
-//  CustomLoginDemo
-//
-//  Created by Christopher Ching on 2019-07-22.
-//  Copyright © 2019 Christopher Ching. All rights reserved.
+
 //
 
 import UIKit
@@ -11,6 +6,8 @@ import FirebaseAuth
 import Firebase
 
 class SignUpViewController: UIViewController {
+  
+  // MARK: - IBOutlets
   
   @IBOutlet weak var firstNameTextField: UITextField!
   
@@ -20,9 +17,7 @@ class SignUpViewController: UIViewController {
   
   @IBOutlet weak var passwordTextField: UITextField!
   
-  
   @IBOutlet var Confirm: MainTF!
-  
   
   @IBOutlet weak var signUpButton: UIButton!
   
@@ -35,13 +30,16 @@ class SignUpViewController: UIViewController {
   @IBOutlet var DateOfBirth: UITextField!
   
   @IBOutlet var confirmTextField: MainTF!
+  
+  // MARK: - View controller lifecycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     self.Keyboard()
     firstNameTextField.text = "rawabi"
     lastNameTextField.text = "Ahmed"
-    emailTextField.text = "test1238@gmail.com"
-    passwordTextField.text = "123_$Ff3"
+    emailTextField.text = "testRawabi1@gmail.com"
+    passwordTextField.text = "123_$Ff3RrSs"
     weight.text = "55"
     Height.text = "156"
     DateOfBirth.text = "2-3-2020"
@@ -57,8 +55,7 @@ class SignUpViewController: UIViewController {
   
   
   
-  
-  
+  // MARK: - Methods
   
   func setUpElements() {
     
@@ -107,6 +104,9 @@ class SignUpViewController: UIViewController {
   }
   
   
+  
+  // MARK: - @IBAction
+  
   @IBAction func signUpTapped(_ sender: Any) {
     
     // Validate the fields
@@ -131,6 +131,9 @@ class SignUpViewController: UIViewController {
       let DateOfBirth = DateOfBirth.text!.trimmingCharacters(in: .whitespacesAndNewlines)
       
       
+      
+      
+      
       // Create the user
       Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
         
@@ -145,6 +148,7 @@ class SignUpViewController: UIViewController {
           // User was created successfully, now store the first name and last name
           let db = Firestore.firestore()
           let id = result?.user.uid
+          //let id1 = UUID.init(uuid: ui)
           db.collection("users").document(id!).setData(["firstname":firstName,
                                                         "lastname":lastName,
                                                         "weight":weight,
@@ -160,29 +164,10 @@ class SignUpViewController: UIViewController {
               self.transitionToHome()
             }
           }
-          //          db.collection("users").addDocument(data: ["firstname":firstName,
-          //                                                    "lastname":lastName,
-          //                                                    // "password":password,
-          //                                                    // "Confirm" : Confirm,
-          //                                                    //"email" : email,
-          //                                                    "weight":weight,
-          //                                                    "height":height,
-          //                                                    "DateOfBirth":DateOfBirth,
-          //                                                    "uid": result!.user.uid ]) { (error) in
-          //
-          //            if error != nil {
-          //              // Show error message
-          //              self.showError("Error saving user data")
-          //            }
-          //          }
-          // Transition to the home screen
-          //          self.transitionToHome()
           
         }
         
       }
-      
-      
       
     }
   }
@@ -194,12 +179,6 @@ class SignUpViewController: UIViewController {
   }
   
   func transitionToHome() {
-    
-    //    let homeViewController = storyboard?.instantiateViewController(identifier: Constants.StoryboardSignUp.homeViewController) as? SignUpSelection
-    //
-    //
-    //    view.window?.rootViewController = homeViewController
-    //    view.window?.makeKeyAndVisible()
     
     let vc2 = storyboard?.instantiateViewController(withIdentifier: "HomeSignUp")
     

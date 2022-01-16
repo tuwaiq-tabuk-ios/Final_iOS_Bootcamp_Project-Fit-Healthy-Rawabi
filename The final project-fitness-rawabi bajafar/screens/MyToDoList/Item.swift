@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 class Item : Equatable , Codable {
+ 
+  // MARK: - Methods
   
   typealias Codable = Decodable & Encodable
   
@@ -19,8 +21,11 @@ class Item : Equatable , Codable {
     && lhs.dateCreated == rhs.dateCreated
   }
   
+ 
   
-  var name: String
+  // MARK: - Properties
+  
+  var name: String?
   var valueInDollars: Int
   var serialNumber: String?
   var dateCreated: Date
@@ -51,6 +56,11 @@ class Item : Equatable , Codable {
     }
   }
 }
+
+
+
+
+// MARK: - Navigation
 
 protocol Encodable {
   func encode(to encoder: Encoder) throws

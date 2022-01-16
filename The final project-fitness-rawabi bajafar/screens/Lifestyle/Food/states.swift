@@ -7,7 +7,11 @@
 
 import Foundation
 import UIKit
+
 struct states{
+  
+  // MARK: - Properties
+  
   var stateName : String
   var abbreviation: String
 }

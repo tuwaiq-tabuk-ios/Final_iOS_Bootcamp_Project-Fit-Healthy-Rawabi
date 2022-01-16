@@ -9,6 +9,7 @@ import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
   
+  // MARK: - IBOutlets
   
   @IBOutlet var imageProduct: UIImageView!
 }

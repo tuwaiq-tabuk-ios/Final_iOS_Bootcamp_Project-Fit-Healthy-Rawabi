@@ -10,6 +10,8 @@ import UIKit
 
 class SignUpSelection: UIViewController {
   
+  // MARK: - View controller lifecycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -18,6 +20,12 @@ class SignUpSelection: UIViewController {
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
   }
+  
+  
+  
+  // MARK: - @IBAction
+  
+  
   @IBAction func FemaleButton(_ sender: Any) {
     
     let vcc = storyboard?.instantiateViewController(withIdentifier: "Lifestyle")

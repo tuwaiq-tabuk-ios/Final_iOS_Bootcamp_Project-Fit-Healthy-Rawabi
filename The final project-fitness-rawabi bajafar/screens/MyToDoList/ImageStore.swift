@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 
 class ImageStore {
+  
+  // MARK: - Properties
+  
   static  let cache = NSCache<NSString,UIImage>()
   
   
@@ -25,6 +28,8 @@ class ImageStore {
     
   }
   
+
+  // MARK: - Methods
   
   static func image(forKey key: String) -> UIImage? {
     if let existingImage = cache.object(forKey: key as NSString){
