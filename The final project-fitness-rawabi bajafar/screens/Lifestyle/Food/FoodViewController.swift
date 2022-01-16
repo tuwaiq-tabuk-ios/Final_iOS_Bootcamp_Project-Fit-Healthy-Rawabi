@@ -9,23 +9,28 @@ import UIKit
 
 class FoodViewController: UIViewController, UISearchControllerDelegate{
   
-  let searchController = UISearchController()
+  // MARK: - IBOutlets
+  
   @IBOutlet var foodSearch: UISearchBar!
   
+  
+  
+  // MARK: - Properties
+  
+  let searchController = UISearchController()
+  
   var Array = [Food]()
-  //let deta = ["breakfast","lunch","Snack","dinner"]
   var filteredData:[String] = []
   var filteredStates = [Food]()
-  
-    var count = 0
+  var count = 0
   var statess = [
-
+    
     states(stateName: "breakfast", abbreviation: "br" ),
     states(stateName: "lunch", abbreviation: "lu" ),
     states(stateName: "Arizona", abbreviation: "AZ")
-    ]
-
-          var array =  [
+  ]
+  
+  var array =  [
     Food(name: "breakfast",
          image: UIImage(named: "breakfast"),
          ingredients: ["3  tablespoons extra virgin olive oil", "2  onions, chopped", "1  tablespoon minced garlic", "3  dried chilies, optional","3  sprigs thyme or rosemary", "8  eggs", "3  cups chopped tomatoes (canned are fine)", "Salt and pepper",  "½Chopped parsley leaves for garnish"],
@@ -48,7 +53,14 @@ class FoodViewController: UIViewController, UISearchControllerDelegate{
   ]
   
   
+  
+  // MARK: - IBOutlets
+  
   @IBOutlet var healthyFood: UITableView!
+  
+  
+  
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -65,12 +77,15 @@ class FoodViewController: UIViewController, UISearchControllerDelegate{
 }
 
 
+// MARK: - Navigation
+
+
 
 extension FoodViewController: UITableViewDataSource , UITableViewDelegate{
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return array.count
-  
+    
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -85,6 +100,10 @@ extension FoodViewController: UITableViewDataSource , UITableViewDelegate{
     return cell
     
   }
+  
+  
+  
+  // MARK: - Table view data source
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 118
@@ -105,74 +124,23 @@ extension FoodViewController: UITableViewDataSource , UITableViewDelegate{
   }
   
 }
-//
-//extension FoodViewController: UITableViewDataSource , UITableViewDelegate{
-//
-//  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//    return filteredData.count
-//  }
-//
-//  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for:indexPath)
-//
-//cell.textLabel?.text = filteredData[indexPath.row]
-//
-//return cell
 
 
-extension FoodViewController:UISearchBarDelegate
-{
+
+// MARK: - Navigation
+
+extension FoodViewController:UISearchBarDelegate{
+  
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
     
     filteredData = []
-   
+    
     if searchText == ""
     {
-      //filteredData = deta
+      
     }
-     // for word in deta
-    //{
-     
-     // if word.uppercased().contains(searchText.uppercased())
-      //{
-       // filteredData.append(word)
-//    var statess = [
-//
-//      states(stateName: "breakfast", abbreviation: "br" ),
-//      states(stateName: "lunch", abbreviation: "lu" ),
-//      states(stateName: "Arizona", abbreviation: "AZ")
-//      ]
-      }
+    
+  }
   
 }
 
-//extension MainVC : UISearchBarDelegate {
-//    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-//        isSearching = true
-//    }
-//    
-//    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-//        isSearching = false
-//    }
-//    
-//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-//        isSearching = false
-//        searchBar.text = ""
-//        view.endEditing(true)
-//        self.itemsTableView.reloadData()
-//    }
-//    
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        if searchText == "" {
-//            isSearching = false
-//            self.itemsTableView.reloadData()
-//        } else {
-//            isSearching = true
-//            filterdItmes = items.filter({ item in
-//                return item.title!.lowercased().contains(searchText.lowercased())
-//            })
-//            self.itemsTableView.reloadData()
-//        }
-//    }
-//}
-//

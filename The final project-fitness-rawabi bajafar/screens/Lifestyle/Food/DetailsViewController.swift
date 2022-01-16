@@ -9,20 +9,33 @@ import UIKit
 import Firebase
 
 class DetailsViewController: UIViewController {
-
+  
+  // MARK: - IBOutlets
+  
   @IBOutlet var FoodNameLabel: UILabel!
+  
   @IBOutlet var FoodImageView: UIImageView!
   
   @IBOutlet var IngredientsLabel: UILabel!
+  
   @IBOutlet var DescriptionLabel: UILabel!
   
+  
+  
+  // MARK: - Properties
+  
   var listOfFood = [""]
- 
   var foodDictionary: [String] = [""]
   var food: Food!
- 
+  
+  
+  
+  
+  // MARK: - View controller lifecycle
+  
   override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
+    
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
     //getSpotsData()
@@ -33,26 +46,10 @@ class DetailsViewController: UIViewController {
     DescriptionLabel.text = food.desc
     
     // Do any additional setup after loading the view.
-    }
-  
-// func getSpotsData() {
-//  let db = Firestore.firestore()
-//
-//  db.collection("recipes").getDocuments() { (querySnapshot, err) in
-//    if let err = err {
-//      print("Error getting documents: \(err)")
-//    } else {
-//      for document in querySnapshot!.documents {
-//       print("***********\n\n\n\(document.documentID) => \(document.data())")
-//       print("******\n\n\n")
-////       print(document.data()["name"]!)
-//       self.listOfFood.append(document.data()["name"] as! String)
-////       print("\n\nThis is the listArray:\(self.listArray)")
-//      }
-//    }
   }
+  
+  
+}
 
 
-// }
-//
-//}
+

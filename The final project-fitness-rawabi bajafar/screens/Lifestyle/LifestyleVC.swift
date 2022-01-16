@@ -14,9 +14,15 @@ import FirebaseFirestore
 
 class LifestyleVC: UIViewController {
   
+  // MARK: - @IBAction
+  
   @IBOutlet var weight: UITextField!
   @IBOutlet var Height: UITextField!
   @IBOutlet var Age: UITextField!
+  
+  
+  
+  // MARK: - Properties
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,6 +30,9 @@ class LifestyleVC: UIViewController {
     navigationItem.setHidesBackButton(true, animated: true)
   }
   
+  
+  
+  // MARK: - @IBAction
   
   @IBAction func atHome(_ sender: Any) {
     let vc = storyboard?.instantiateViewController(withIdentifier: "HomeVC")

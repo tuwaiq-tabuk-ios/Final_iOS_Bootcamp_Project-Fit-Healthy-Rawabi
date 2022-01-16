@@ -8,12 +8,19 @@
 import UIKit
 import MapKit
 import CoreLocation
+
 class MapViewController: UIViewController , CLLocationManagerDelegate {
+  
+  // MARK: - Properties
   
   @IBOutlet var mapView: MKMapView!
   @IBOutlet var statusLabel: UILabel!
   
   let manager = CLLocationManager()
+  
+  
+  
+  // MARK: - Methods
   
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
                        [CLLocation]) {
@@ -29,11 +36,14 @@ class MapViewController: UIViewController , CLLocationManagerDelegate {
     statusLabel.text = "\(location.speed)"
   }
   
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
+    
     manager.delegate = self
     manager.desiredAccuracy = kCLLocationAccuracyBest
     manager.requestWhenInUseAuthorization()
@@ -42,3 +52,4 @@ class MapViewController: UIViewController , CLLocationManagerDelegate {
   
   
 }
+

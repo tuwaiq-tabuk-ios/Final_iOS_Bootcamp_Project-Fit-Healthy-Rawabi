@@ -4,8 +4,17 @@
 import UIKit
 
 @IBDesignable
+
 final  class MainTF: UITextField {
   
+  // MARK: - Properties
+  
+  var padding = UIEdgeInsets(top: 0, left: 10 , bottom: 0, right: 5)
+  
+  
+  
+  // MARK: - Navigation
+ 
   // Provides left padding for images
   override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
     var textRect = super.leftViewRect(forBounds: bounds)
@@ -17,8 +26,6 @@ final  class MainTF: UITextField {
   }
   
   
-  
-  var padding = UIEdgeInsets(top: 0, left: 10 , bottom: 0, right: 5)
   override public func textRect(forBounds bounds: CGRect) -> CGRect {
     return bounds.inset(by: padding)
   }
@@ -29,7 +36,9 @@ final  class MainTF: UITextField {
     return bounds.inset(by: padding)
   }
   
+ 
   
+  // MARK: - @IBAction
   
   @IBInspectable var leftImage: UIImage? {
     didSet {
@@ -43,8 +52,7 @@ final  class MainTF: UITextField {
     }
   }
   
-  //@IBInspectable var leftPadding: CGFloat = 10
-  //let textPadding: CGFloat = 23
+  
   @IBInspectable var color: UIColor = UIColor.lightGray {
     didSet {
       updateView()
@@ -63,6 +71,10 @@ final  class MainTF: UITextField {
     }
   }
   
+ 
+  
+  
+  // MARK: - Methods
   
   func setEyeView(){
     

@@ -9,6 +9,9 @@ import Foundation
 
 
 struct LifestyleItem{
+ 
+  // MARK: - Properties
+ 
   let name : String
   let description : String
 }

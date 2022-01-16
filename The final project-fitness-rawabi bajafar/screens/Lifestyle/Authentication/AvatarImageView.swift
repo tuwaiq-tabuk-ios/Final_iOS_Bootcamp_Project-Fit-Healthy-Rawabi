@@ -3,7 +3,11 @@
 import UIKit
 
 @IBDesignable
+
 class AvatarImageView: UIImageView {
+  
+  // MARK: - Navigation
+  
   override init(image: UIImage?) {
     
     super.init(image: image)

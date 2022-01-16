@@ -5,9 +5,10 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+
 class ProfileVC: UIViewController  {
   
-  
+  // MARK: - IBOutlets
   
   @IBOutlet weak var EmailTF:MainTF!
   
@@ -22,6 +23,10 @@ class ProfileVC: UIViewController  {
   @IBOutlet weak var sendBtn: UIButton!
   
   @IBOutlet var dateOfBirthTF: MainTF!
+  
+  
+  // MARK: - Properties
+  
   let db = Firestore.firestore()
   
   var firstName = "firstname"
@@ -33,6 +38,9 @@ class ProfileVC: UIViewController  {
   
   //var users1: Users?
   //var userInfo: SettingVC
+  
+  
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -79,6 +87,10 @@ class ProfileVC: UIViewController  {
     
     
   }
+  
+  
+  
+  // MARK: - @IBAction
   
   @IBAction func sendProfile(_ sender: Any) {
     Auth.auth().currentUser?.updateEmail(to: EmailTF.text!) { [self] error in

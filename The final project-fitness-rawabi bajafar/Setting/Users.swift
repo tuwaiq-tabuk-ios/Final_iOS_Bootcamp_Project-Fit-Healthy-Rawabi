@@ -7,6 +7,9 @@
 
 import Foundation
 struct Users{
+ 
+  // MARK: - Properties
+  
   var firstname: String
   var email: String
   var lastname: String

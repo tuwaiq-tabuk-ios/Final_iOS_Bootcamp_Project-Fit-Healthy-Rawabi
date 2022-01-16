@@ -10,12 +10,16 @@ import Foundation
 
 import UIKit
 import PhotosUI
+import Firebase
+
 
 class DetailViewController: UIViewController , UITextFieldDelegate , UINavigationControllerDelegate, UIImagePickerControllerDelegate, PHPickerViewControllerDelegate {
   
-  @IBOutlet var MyToDoList: UITextField!
-  @IBOutlet var Nextgoals: UITextField!
+  // MARK: - IBOutlets
   
+  @IBOutlet var MyToDoList: UITextField!
+  
+  @IBOutlet var Nextgoals: UITextField!
   
   @IBOutlet weak var datePicker: UIDatePicker!
   
@@ -23,11 +27,13 @@ class DetailViewController: UIViewController , UITextFieldDelegate , UINavigatio
   
   @IBOutlet weak var toolbar: UIToolbar!
   
-  
   @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
     view.endEditing(true)
   }
   
+  
+  
+  // MARK: - Properties
   
   var item: Item!
   { didSet {
@@ -47,18 +53,27 @@ class DetailViewController: UIViewController , UITextFieldDelegate , UINavigatio
   
   
   
+  // MARK: - View controller lifecycle
+  
   override func viewDidLoad() {
     configureDatePicker()
     configureToolbar()
+    
+    overrideUserInterfaceStyle = .light
+    navigationItem.setHidesBackButton(true, animated: true)
+    
     
   }
   
   
   
+  
+  // MARK: - Navigation
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     MyToDoList.text = item.name
-    Nextgoals.text = item.name
+    Nextgoals.text = item.name 
     numberFormatter.string(from: NSNumber(value: item.valueInDollars))
     datePicker.date = item.dateCreated
     // Get the item key
@@ -67,6 +82,9 @@ class DetailViewController: UIViewController , UITextFieldDelegate , UINavigatio
     // If there is an associated image with the item, display it on the image view
     let imageToDisplay = ImageStore.image(forKey: key)
     imageView.image = imageToDisplay
+    
+    
+    
   }
   
   
@@ -80,6 +98,31 @@ class DetailViewController: UIViewController , UITextFieldDelegate , UINavigatio
     
   }
   
+  
+  @IBAction func savePressed(_ sender: UIButton) {
+    
+    
+    let db = Firestore.firestore()
+    let id = UUID().uuidString
+    db.collection("details").document(id).setData([
+      "MyToDoList": MyToDoList.text!.trimmingCharacters(in: .whitespacesAndNewlines),
+      "Nextgoals": Nextgoals.text!.trimmingCharacters(in: .whitespacesAndNewlines) ,
+      "datePicker": datePicker.date
+    ]) { err in
+      if let err = err {
+        print("Error writing document: \(err)")
+      } else {
+        print("Document successfully written!")
+      }
+    }
+    
+    
+  }
+  
+  
+  
+  
+  // MARK: - Methods
   
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()

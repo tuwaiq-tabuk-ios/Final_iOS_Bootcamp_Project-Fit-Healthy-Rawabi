@@ -6,20 +6,32 @@ import AVKit
 
 class ExerciseVC: UIViewController {
   
+  // MARK: - Properties
+  
   var videoPlayer:AVPlayer?
   
   var videoPlayerLayer:AVPlayerLayer?
   
+  
+  
+  // MARK: - IBOutlets
+  
   @IBOutlet weak var signUpButton: UIButton!
   
   @IBOutlet weak var loginButton: UIButton!
+  
+  
+  
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     navigationItem.backButtonTitle = ""
     setUpElements()
+    
     navigationItem.backButtonTitle = ""
+    
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
   }
@@ -29,6 +41,10 @@ class ExerciseVC: UIViewController {
     // Set up video in the background
     setUpVideo()
   }
+  
+  
+  
+  // MARK: - Methods
   
   func setUpElements() {
     Utilities.styleFilledButton(signUpButton)

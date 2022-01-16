@@ -4,9 +4,19 @@ import UIKit
 
 class DetailVC: UIViewController {
   
+  // MARK: - IBOutlets
+  
   @IBOutlet var descriptionLabel: UITextField!
   
+  
+  
+  // MARK: - Properties
+  
   var descriptionText: String = ""
+  
+  
+  
+  // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()

@@ -1,16 +1,21 @@
 //
-//  ViewController.swift
-//  final project 2
-//
-//  Created by Bushra alatwi on 24/04/1443 AH.
-//
 
 import UIKit
+
 struct Section {
+  
+  // MARK: - Properties
+  
   let title: String
   let options: [SettingsOption]
 }
+
+
+
 struct SettingsOption {
+  
+  // MARK: - Properties
+  
   let title: String
   let icon: UIImage
   let iconBackgroundColor: UIColor
@@ -18,6 +23,9 @@ struct SettingsOption {
 }
 
 class viewControllerSection: UIViewController, UITableViewDelegate,UITableViewDataSource {
+  
+  // MARK: - IBOutlets
+  
   @IBOutlet var profile: UIButton!
   
   
@@ -28,7 +36,15 @@ class viewControllerSection: UIViewController, UITableViewDelegate,UITableViewDa
     return table
   }()
   
+  
+  
+  // MARK: - Properties
+  
   var models = [Section]()
+  var goButton = UIButton()
+  
+  // MARK: - View controller lifecycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -43,7 +59,9 @@ class viewControllerSection: UIViewController, UITableViewDelegate,UITableViewDa
     creatButton()
   }
   
-  var goButton = UIButton()
+  
+  
+  // MARK: - Methods
   
   func creatButton() {
     goButton.setTitle("Sign Out", for: .normal)
@@ -75,6 +93,9 @@ class viewControllerSection: UIViewController, UITableViewDelegate,UITableViewDa
     }
                             ]))
   }
+  
+  // MARK: - Table view data source
+  
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     let section = models[section]
     return section.title
