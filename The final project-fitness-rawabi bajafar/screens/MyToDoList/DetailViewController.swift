@@ -73,7 +73,7 @@ class DetailViewController: UIViewController , UITextFieldDelegate , UINavigatio
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     MyToDoList.text = item.name
-    Nextgoals.text = item.name 
+    Nextgoals.text = item.name
     numberFormatter.string(from: NSNumber(value: item.valueInDollars))
     datePicker.date = item.dateCreated
     // Get the item key
@@ -98,6 +98,9 @@ class DetailViewController: UIViewController , UITextFieldDelegate , UINavigatio
     
   }
   
+  
+  
+  // MARK: - @IBAction
   
   @IBAction func savePressed(_ sender: UIButton) {
     

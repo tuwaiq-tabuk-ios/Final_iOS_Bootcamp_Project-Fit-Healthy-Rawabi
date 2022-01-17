@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class Item : Equatable , Codable {
- 
+  
   // MARK: - Methods
   
   typealias Codable = Decodable & Encodable
@@ -21,7 +21,7 @@ class Item : Equatable , Codable {
     && lhs.dateCreated == rhs.dateCreated
   }
   
- 
+  
   
   // MARK: - Properties
   

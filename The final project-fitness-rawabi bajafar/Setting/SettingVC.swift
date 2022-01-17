@@ -61,7 +61,7 @@ class SettingVC: UIViewController{
     
     
   }
-
+  
   @IBAction func DeleteAccount(_ sender: Any) {
     let user = Auth.auth().currentUser
     user?.delete() { error in
@@ -70,7 +70,7 @@ class SettingVC: UIViewController{
       } else {
         print("Account Deleted")
       }
-
+      
     }
   }
   

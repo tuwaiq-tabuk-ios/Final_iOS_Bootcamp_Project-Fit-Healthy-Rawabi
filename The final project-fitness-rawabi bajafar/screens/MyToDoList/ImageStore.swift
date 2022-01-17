@@ -28,7 +28,7 @@ class ImageStore {
     
   }
   
-
+  
   // MARK: - Methods
   
   static func image(forKey key: String) -> UIImage? {

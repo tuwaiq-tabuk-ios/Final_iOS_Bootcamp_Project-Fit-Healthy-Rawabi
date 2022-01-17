@@ -10,7 +10,7 @@ import UIKit
 class TabBarVC: UITabBarController {
   
   // MARK: - View controller lifecycle
- 
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     overrideUserInterfaceStyle = .light

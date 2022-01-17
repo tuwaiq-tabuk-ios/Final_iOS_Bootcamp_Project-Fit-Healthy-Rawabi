@@ -6,6 +6,8 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
   
+  
+  
   // MARK: - IBOutlets
   
   @IBOutlet weak var emailTextField: UITextField!
@@ -25,8 +27,8 @@ class LoginViewController: UIViewController {
     super.viewDidLoad()
     
     self.Keyboard()
-    emailTextField.text = "test123899@gmail.com"
-    passwordTextField.text = "Rr12345678_$"
+    emailTextField.text = "testRawabi1@gmail.com"
+    passwordTextField.text = "123_$Ff3RrSs"
     navigationItem.backButtonTitle = ""
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
