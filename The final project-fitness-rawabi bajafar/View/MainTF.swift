@@ -14,7 +14,7 @@ final  class MainTF: UITextField {
   
   
   // MARK: - Navigation
- 
+  
   // Provides left padding for images
   override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
     var textRect = super.leftViewRect(forBounds: bounds)
@@ -36,7 +36,7 @@ final  class MainTF: UITextField {
     return bounds.inset(by: padding)
   }
   
- 
+  
   
   // MARK: - @IBAction
   
@@ -71,7 +71,7 @@ final  class MainTF: UITextField {
     }
   }
   
- 
+  
   
   
   // MARK: - Methods
@@ -143,8 +143,6 @@ final  class MainTF: UITextField {
     
     
     layer.borderColor = borderColor != nil ? borderColor?.cgColor :  color.cgColor
-    
-    
     
   }
   

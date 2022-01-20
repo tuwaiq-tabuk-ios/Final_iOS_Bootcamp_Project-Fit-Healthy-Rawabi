@@ -872,13 +872,6 @@
                                             <constraint firstAttribute="height" constant="259" id="LRo-OX-fDx"/>
                                         </constraints>
                                     </imageView>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="oqp-fc-umI">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="rFA-Cw-tmM"/>
-                                        </constraints>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </searchBar>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -886,9 +879,6 @@
                                     <constraint firstAttribute="height" constant="259" id="Bu0-lL-lZB"/>
                                     <constraint firstItem="bMD-jI-lNQ" firstAttribute="top" secondItem="HRb-lM-6vF" secondAttribute="top" id="Kxy-tC-dFB"/>
                                     <constraint firstItem="bMD-jI-lNQ" firstAttribute="leading" secondItem="HRb-lM-6vF" secondAttribute="leading" id="WAk-Ph-flD"/>
-                                    <constraint firstItem="oqp-fc-umI" firstAttribute="top" secondItem="HRb-lM-6vF" secondAttribute="top" id="dV3-Yu-9mH"/>
-                                    <constraint firstAttribute="trailing" secondItem="oqp-fc-umI" secondAttribute="trailing" id="mO4-h4-m7k"/>
-                                    <constraint firstItem="oqp-fc-umI" firstAttribute="leading" secondItem="bMD-jI-lNQ" secondAttribute="leading" id="xBY-vG-HHa"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9lp-45-88c">
@@ -964,7 +954,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Food" image="heart.text.square.fill" catalog="system" id="6WS-7Q-Z7d"/>
                     <connections>
-                        <outlet property="foodSearch" destination="oqp-fc-umI" id="3QE-AU-yed"/>
                         <outlet property="healthyFood" destination="9lp-45-88c" id="hnI-tq-c7A"/>
                     </connections>
                 </viewController>

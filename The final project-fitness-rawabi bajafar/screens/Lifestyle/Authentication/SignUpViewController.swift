@@ -7,6 +7,9 @@ import Firebase
 
 class SignUpViewController: UIViewController {
   
+  let defaults = UserDefaults.standard
+  
+  
   // MARK: - IBOutlets
   
   @IBOutlet weak var firstNameTextField: UITextField!

@@ -170,6 +170,7 @@
 				BF8FA268278B0ABD0004766E /* Keyboard.swift */,
 				BF2732CC277520B800535724 /* Authentication */,
 				BF8C674B2785F38500CDB60F /* MyPlate */,
+				BFEB6B832795D3970056A52D /* Model */,
 				BF2732D32775213400535724 /* Food */,
 			);
 			path = Lifestyle;
@@ -197,8 +198,6 @@
 				BF2732D62775215800535724 /* FoodViewController.swift */,
 				BF0B54BC2779D57100CAD052 /* SearchResultsController.swift */,
 				BF2732D82775216500535724 /* FoodCell.swift */,
-				BF2732DA2775216C00535724 /* Food.swift */,
-				BF64899B278CD6610081D650 /* states.swift */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -238,7 +237,6 @@
 				BF195078277CBA43002B72F0 /* SettingVC.swift */,
 				BF325C80278AED9400B9CA1C /* StoryboardName.swift */,
 				BF19507A277CBA6E002B72F0 /* ProfileVC.swift */,
-				BF4EEEBF2782436500D64281 /* Users.swift */,
 				BF195070277CBA0D002B72F0 /* newPasswordTF.swift */,
 			);
 			path = Setting;
@@ -259,7 +257,6 @@
 			isa = PBXGroup;
 			children = (
 				BF2732C427751FC800535724 /* Main.storyboard */,
-				BFCA7B4F2778986F00C95D09 /* LifestyleItem.swift */,
 				BF2732CA2775204800535724 /* TabBarVC.swift */,
 				BF62A8D0277991DF004B0F82 /* MainTF.swift */,
 			);
@@ -313,11 +310,22 @@
 			path = "The final project-fitness-rawabi bajafar";
 			sourceTree = "<group>";
 		};
+		BFEB6B832795D3970056A52D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFD3A451278EC5D100F30B33 /* ItemStore.swift */,
+				BF64899B278CD6610081D650 /* states.swift */,
+				BF2732DA2775216C00535724 /* Food.swift */,
+				BFCA7B4F2778986F00C95D09 /* LifestyleItem.swift */,
+				BF4EEEBF2782436500D64281 /* Users.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BFF8CEF4278CE6BD00DB4623 /* MyToDoList */ = {
 			isa = PBXGroup;
 			children = (
 				BFD3A44F278EC58F00F30B33 /* ItemsVC.swift */,
-				BFD3A451278EC5D100F30B33 /* ItemStore.swift */,
 				BFD3A453278EC62D00F30B33 /* ItemCell.swift */,
 				BFD3A455278EC66800F30B33 /* Item.swift */,
 				BFD3A457278EC69A00F30B33 /* ImageStore.swift */,
