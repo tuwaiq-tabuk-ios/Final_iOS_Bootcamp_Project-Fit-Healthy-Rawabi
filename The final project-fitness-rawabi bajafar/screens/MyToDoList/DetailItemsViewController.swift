@@ -13,13 +13,13 @@ import PhotosUI
 import Firebase
 
 
-class DetailViewController: UIViewController , UITextFieldDelegate , UINavigationControllerDelegate, UIImagePickerControllerDelegate, PHPickerViewControllerDelegate {
+class DetailItemsViewController: UIViewController , UITextFieldDelegate , UINavigationControllerDelegate, UIImagePickerControllerDelegate, PHPickerViewControllerDelegate {
   
   // MARK: - IBOutlets
   
-  @IBOutlet var MyToDoList: UITextField!
-  
-  @IBOutlet var Nextgoals: UITextField!
+ 
+  @IBOutlet var myToDoList: UITextField!
+  @IBOutlet var nextgoals: UITextField!
   
   @IBOutlet weak var datePicker: UIDatePicker!
   
@@ -72,8 +72,8 @@ class DetailViewController: UIViewController , UITextFieldDelegate , UINavigatio
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    MyToDoList.text = item.name
-    Nextgoals.text = item.name
+    myToDoList.text = item.name
+    nextgoals.text = item.name
     numberFormatter.string(from: NSNumber(value: item.valueInDollars))
     datePicker.date = item.dateCreated
     // Get the item key
@@ -93,8 +93,8 @@ class DetailViewController: UIViewController , UITextFieldDelegate , UINavigatio
     // Clear first responder
     view.endEditing(true)
     // "Save" changes to item
-    item.name = MyToDoList.text ?? ""
-    item.serialNumber = Nextgoals.text
+    item.name = myToDoList.text ?? ""
+    item.serialNumber = nextgoals.text
     
   }
   
@@ -108,8 +108,8 @@ class DetailViewController: UIViewController , UITextFieldDelegate , UINavigatio
     let db = Firestore.firestore()
     let id = UUID().uuidString
     db.collection("details").document(id).setData([
-      "MyToDoList": MyToDoList.text!.trimmingCharacters(in: .whitespacesAndNewlines),
-      "Nextgoals": Nextgoals.text!.trimmingCharacters(in: .whitespacesAndNewlines) ,
+      "MyToDoList": myToDoList.text!.trimmingCharacters(in: .whitespacesAndNewlines),
+      "Nextgoals": nextgoals.text!.trimmingCharacters(in: .whitespacesAndNewlines) ,
       "datePicker": datePicker.date
     ]) { err in
       if let err = err {

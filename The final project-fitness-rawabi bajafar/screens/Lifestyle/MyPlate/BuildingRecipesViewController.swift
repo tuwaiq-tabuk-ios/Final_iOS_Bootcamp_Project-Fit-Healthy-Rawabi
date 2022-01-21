@@ -42,17 +42,21 @@ class BuildingRecipesViewController: UIViewController, UIPickerViewDelegate, UIP
     return 1
   }
   
+  
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
     return items.count
   }
+  
   
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
     return (items[row] + ": +" + String(calories[row]) + " cal")
   }
   
+  
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     selectedCalorieRow = row
   }
+  
   
   func popUp() {
     let alertController = UIAlertController(title: "Add Ingredient", message: "What ingredient would you like to add?", preferredStyle: .alert)
@@ -61,9 +65,11 @@ class BuildingRecipesViewController: UIViewController, UIPickerViewDelegate, UIP
       textField.placeholder = "Enter item name."
     }
     
+    
     alertController.addTextField { (textField) -> Void in
       textField.placeholder = "Enter amount of calories."
     }
+    
     
     let addAction = UIAlertAction(title: "Add Ingredient", style: .default, handler: { action in
       let calorieTextField = alertController.textFields![1] as UITextField
@@ -73,8 +79,9 @@ class BuildingRecipesViewController: UIViewController, UIPickerViewDelegate, UIP
       
       self.ingredientsTextView.insertText(itemTextField.text! + " added +" + calorieTextField.text! + " calories. \n")
       
-      
     })
+   
+    
     let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler:nil)
     alertController.addAction(addAction)
     alertController.addAction(cancelAction)

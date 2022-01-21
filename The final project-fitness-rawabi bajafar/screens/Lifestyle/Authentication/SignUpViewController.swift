@@ -20,32 +20,34 @@ class SignUpViewController: UIViewController {
   
   @IBOutlet weak var passwordTextField: UITextField!
   
-  @IBOutlet var Confirm: MainTF!
+  @IBOutlet var Confirm: CMTextField!
   
   @IBOutlet weak var signUpButton: UIButton!
   
   @IBOutlet weak var errorLabel: UILabel!
   
-  @IBOutlet var weight: UITextField!
+  @IBOutlet var weightTextField: UITextField!
   
-  @IBOutlet var Height: UITextField!
+  @IBOutlet var heightTextField: UITextField!
   
-  @IBOutlet var DateOfBirth: UITextField!
+  @IBOutlet var dateOfBirthTextField: UITextField!
   
-  @IBOutlet var confirmTextField: MainTF!
+  @IBOutlet var confirmTextField: CMTextField!
   
   // MARK: - View controller lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     self.Keyboard()
+   
     firstNameTextField.text = "rawabi"
     lastNameTextField.text = "Ahmed"
     emailTextField.text = "testRawabi1@gmail.com"
     passwordTextField.text = "123_$Ff3RrSs"
-    weight.text = "55"
-    Height.text = "156"
-    DateOfBirth.text = "2-3-2020"
+    weightTextField.text = "55"
+    heightTextField.text = "156"
+    dateOfBirthTextField.text = "2-3-2020"
     confirmTextField.text = "123_$Ff3"
     // Do any additional setup after loading the view.
     setUpElements()
@@ -72,125 +74,97 @@ class SignUpViewController: UIViewController {
     Utilities.styleTextField(passwordTextField)
     Utilities.styleTextField(Confirm)
     Utilities.styleFilledButton(signUpButton)
-    Utilities.styleTextField(weight)
-    Utilities.styleTextField(Height)
-    Utilities.styleTextField(DateOfBirth)
+    Utilities.styleTextField(weightTextField)
+    Utilities.styleTextField(heightTextField)
+    Utilities.styleTextField(dateOfBirthTextField)
     
   }
   
-  // Check the fields and validate that the data is correct. If everything is correct, this method returns nil. Otherwise, it returns the error message
-  func validateFields() -> String? {
-    
-    // Check that all fields are filled in
-    if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-        lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-        emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-        passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-        Confirm.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-        weight.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-        Height.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-        DateOfBirth.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
-    {
-      
-      return "Please fill in all fields."
-    }
-    
-    // Check if the password is secure
-    let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-    
-    if Utilities.isPasswordValid(cleanedPassword) == false {
-      // Password isn't secure enough
-      return "Please make sure your password is at least 8 characters, contains a special character and a number."
-    }
-    
-    return nil
-  }
   
-  
-  
+
   // MARK: - @IBAction
   
   @IBAction func signUpTapped(_ sender: Any) {
     
-    // Validate the fields
-    let error = validateFields()
+    signUp()
     
-    if error != nil {
-      
-      
-      showError(error!)
-    }
-    else {
-      
-      // Create cleaned versions of the data
-      let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      let Confirm = Confirm.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-      let weight = weight.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      let height = Height.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      let age = DateOfBirth.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      let DateOfBirth = DateOfBirth.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-      
-      
-      
-      
-      
-      // Create the user
-      Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
-        
-        //Check for errors
-        if err != nil {
-          
-          // There was an error creating the user
-          self.showError("Error creating user")
-        }
-        else {
-          print(result)
-          // User was created successfully, now store the first name and last name
-          let db = Firestore.firestore()
-          let id = result?.user.uid
-          //let id1 = UUID.init(uuid: ui)
-          db.collection("users").document(id!).setData(["firstname":firstName,
-                                                        "lastname":lastName,
-                                                        "weight":weight,
-                                                        "height":height,
-                                                        "DateOfBirth":DateOfBirth,
-                                                        "uid":result!.user.uid ]) { (error) in
-            
-            if error != nil {
-              // Show error message
-              self.showError("Error saving user data")
-            }
-            else{
-              self.transitionToHome()
-            }
+  }
+  // MARK: - Methods
+  
+  private func signUp() {
+    
+    guard let email = emailTextField.text,
+          email.isEmpty == false else {
+            errorLabel.isHidden = false
+            errorLabel.text = "Fill in the email"
+            return
           }
-          
-        }
+    
+    guard let password = passwordTextField.text,
+          password.isEmpty == false else {
+            errorLabel.isHidden = false
+            errorLabel.text = "Enter the password"
+            return
+          }
+    
+    guard let firstName = firstNameTextField.text,
+          firstName.isEmpty == false else {
+            errorLabel.isHidden = false
+            errorLabel.text = "Fill in the firstName"
+            return
+            
+          }
+    
+    
+    guard let lastName = lastNameTextField.text,
+          lastName.isEmpty == false else {
+            errorLabel.isHidden = false
+            errorLabel.text = "Enter the lastName"
+            return
+          }
+    
+    guard let weight = weightTextField.text,
+          weight.isEmpty == false else {
+            errorLabel.isHidden = false
+            errorLabel.text = "Fill in the weight"
+            
+            return
+          }
+    
+    guard let height = heightTextField.text,
+          height.isEmpty == false else {
+            errorLabel.isHidden = false
+            errorLabel.text = "Fill in the height"
+            
+            return
+          }
+    
+    guard let dateOfBirth = dateOfBirthTextField.text,
+          dateOfBirth.isEmpty == false else {
+            errorLabel.isHidden = false
+            errorLabel.text = "Fill in the date"
+            
+            return
+          }
+    FSUserManager.shared.signUpUserWith(email: email,
+                                           password: password,
+                                        firstname: firstName,
+                                        lastname: lastName,
+                                        Height:height,
+                                        weight:weight
+                                        ,DateOfBirth:dateOfBirth) { error in
+      if error == nil {
+        // Navigation
+        let storybord = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storybord.instantiateViewController(withIdentifier: "HomeSignUp")
         
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true)
+        
+      } else {
+        self.errorLabel.isHidden = false
+        self.errorLabel.text = error?.localizedDescription
       }
-      
     }
   }
-  
-  func showError(_ message:String) {
-    
-    errorLabel.text = message
-    errorLabel.alpha = 1
-  }
-  
-  func transitionToHome() {
-    
-    let vc2 = storyboard?.instantiateViewController(withIdentifier: "HomeSignUp")
-    
-    if let viewcontrollerr = vc2 {
-      
-      
-      present(viewcontrollerr, animated: true)
-      
-    }
-  }
-  
 }

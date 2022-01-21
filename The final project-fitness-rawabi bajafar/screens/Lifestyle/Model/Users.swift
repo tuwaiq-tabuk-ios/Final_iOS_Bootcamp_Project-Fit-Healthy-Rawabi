@@ -6,10 +6,9 @@
 //
 
 import Foundation
-struct Users{
- 
-  // MARK: - Properties
-  
+
+struct Users {
+
   var firstname: String
   var email: String
   var lastname: String

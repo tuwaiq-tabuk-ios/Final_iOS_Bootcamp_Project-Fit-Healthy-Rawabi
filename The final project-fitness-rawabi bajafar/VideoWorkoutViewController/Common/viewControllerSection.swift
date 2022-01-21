@@ -34,7 +34,7 @@ class viewControllerSection: UIViewController, UITableViewDelegate,UITableViewDa
     let table = UITableView(frame: .zero, style: .grouped)
     table.register(SettingTableViewCell.self, forCellReuseIdentifier: SettingTableViewCell.identifier)
     return table
-  }()
+  } ()
   
   
   

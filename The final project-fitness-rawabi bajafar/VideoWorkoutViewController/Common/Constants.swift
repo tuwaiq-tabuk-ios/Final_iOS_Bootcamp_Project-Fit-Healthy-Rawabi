@@ -15,14 +15,12 @@ struct Constants {
   struct StoryboardHome {
     
     static let homeViewController = "HomeVC"
-    
   }
   
   
   struct StoryboardSignUp {
     
     static let homeViewController = "HomeSignUp"
-    
   }
   
 }

@@ -14,12 +14,6 @@ import FirebaseFirestore
 
 class LifestyleVC: UIViewController {
   
-  // MARK: - @IBAction
-  
-  @IBOutlet var weight: UITextField!
-  @IBOutlet var Height: UITextField!
-  @IBOutlet var Age: UITextField!
-  
   
   
   // MARK: - Properties

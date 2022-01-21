@@ -6,29 +6,26 @@
 //
 
 import UIKit
-import Firebase
 
 class DetailsViewController: UIViewController {
   
-  // MARK: - IBOutlets
-  
-  @IBOutlet var FoodNameLabel: UILabel!
-  
-  @IBOutlet var FoodImageView: UIImageView!
-  
-  @IBOutlet var IngredientsLabel: UILabel!
-  
-  @IBOutlet var DescriptionLabel: UILabel!
-  
-  
-  
   // MARK: - Properties
   
-  var listOfFood = [""]
-  var foodDictionary: [String] = [""]
+//  var listOfFood = [""]
+//  var foodDictionary: [String] = [""]
   var food: Food!
   
   
+  
+  // MARK: - IBOutlets
+  
+  @IBOutlet var foodNameLabel: UILabel!
+  
+  @IBOutlet var foodImageView: UIImageView!
+  
+  @IBOutlet var ingredientsLabel: UILabel!
+  
+  @IBOutlet var descriptionLabel: UILabel!
   
   
   // MARK: - View controller lifecycle
@@ -39,15 +36,16 @@ class DetailsViewController: UIViewController {
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
     //getSpotsData()
-    
-    FoodNameLabel.text = food.name
-    FoodImageView.image = food.image
-    IngredientsLabel.text = food.ingredients.joined(separator: "\n")
-    DescriptionLabel.text = food.desc
+   
+    print("\nDEBUG: \("#function") - \(String(describing: food))")
+    print("\nDEBUG: \("#function") - \(String(describing: food.name))")
+    foodNameLabel.text = food.name
+    foodImageView.image = food.image
+    ingredientsLabel.text = food.ingredients.joined(separator: "\n")
+    descriptionLabel.text = food.desc
     
     // Do any additional setup after loading the view.
   }
-  
   
 }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarVC: UITabBarController {
+class MainTabBarVC: UITabBarController {
   
   // MARK: - View controller lifecycle
   

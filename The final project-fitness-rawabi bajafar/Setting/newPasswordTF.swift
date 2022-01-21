@@ -14,7 +14,7 @@ class newPasswordTF : UIViewController {
   
   // MARK: - IBOutlets
   
-  @IBOutlet var newPasswordTF: MainTF!
+  @IBOutlet var newPasswordTF: CMTextField!
   @IBOutlet weak var saveBotn: UIButton!
   
   
@@ -26,13 +26,14 @@ class newPasswordTF : UIViewController {
     
     let user =  Auth.auth().currentUser
     print(user?.uid)
+    
     if let currentUser = user {
       db.collection("users").document(currentUser.uid).getDocument { doc, err in
-        if err != nil{
+        if err != nil {
           print(err)
           
         }
-        else{
+        else {
           let data = doc!.data()!
           
           
@@ -62,5 +63,4 @@ class newPasswordTF : UIViewController {
       }
     }
   }
-  
 }

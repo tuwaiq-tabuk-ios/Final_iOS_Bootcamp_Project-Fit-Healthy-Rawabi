@@ -6,23 +6,23 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
-class ProfileVC: UIViewController  {
+class ProfileViweController: UIViewController  {
   
   // MARK: - IBOutlets
   
-  @IBOutlet weak var EmailTF:MainTF!
+  @IBOutlet weak var EmailTF:CMTextField!
   
-  @IBOutlet var firstnameTF: MainTF!
+  @IBOutlet var firstnameTF: CMTextField!
   
-  @IBOutlet var lastnameTF: MainTF!
+  @IBOutlet var lastnameTF: CMTextField!
   
-  @IBOutlet var weightTF: MainTF!
+  @IBOutlet var weightTF: CMTextField!
   
-  @IBOutlet var heightTF: MainTF!
+  @IBOutlet var heightTF: CMTextField!
   
   @IBOutlet weak var sendBtn: UIButton!
   
-  @IBOutlet var dateOfBirthTF: MainTF!
+  @IBOutlet var dateOfBirthTF: CMTextField!
   
   
   // MARK: - Properties
@@ -36,8 +36,6 @@ class ProfileVC: UIViewController  {
   var dataOfBirth =  "DateOfBirth"
   var email = ""
   
-  //var users1: Users?
-  //var userInfo: SettingVC
   
   
   // MARK: - View controller lifecycle
@@ -46,13 +44,7 @@ class ProfileVC: UIViewController  {
     super.viewDidLoad()
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
-    //    EmailTF.text = users1?.email
-    //    firstnameTF.text = users1?.firstname
-    //    lastnameTF.text = users1?.lastname
-    //    weightTF.text = users1?.weight
-    //    heightTF.text = users1?.Height
-    //    dateOfBirthTF.text = users1?.DateOfBirth
-    
+   
     
     let user = Auth.auth().currentUser
     print(user?.uid)
@@ -62,7 +54,7 @@ class ProfileVC: UIViewController  {
           print(err)
           
         }
-        else{
+        else {
           let data = doc!.data()!
           self.firstName = data ["firstname"] as! String
           self.lastName = data ["lastname"] as! String
@@ -81,11 +73,7 @@ class ProfileVC: UIViewController  {
           
         }
       }
-      
     }
-    
-    
-    
   }
   
   

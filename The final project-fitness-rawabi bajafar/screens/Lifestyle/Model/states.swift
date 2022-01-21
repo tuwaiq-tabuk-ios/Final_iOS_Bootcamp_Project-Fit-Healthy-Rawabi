@@ -8,11 +8,9 @@
 import Foundation
 import UIKit
 
-struct states{
-  
-  // MARK: - Properties
-  
+struct states {
   var stateName : String
   var abbreviation: String
+
 }
 

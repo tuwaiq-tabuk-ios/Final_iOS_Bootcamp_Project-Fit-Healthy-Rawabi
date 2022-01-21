@@ -4,7 +4,7 @@
 import UIKit
 import AVKit
 
-class ExerciseVC: UIViewController {
+class WelcomeVC: UIViewController {
   
   // MARK: - Properties
   
