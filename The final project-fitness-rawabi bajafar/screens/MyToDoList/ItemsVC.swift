@@ -94,7 +94,7 @@ class ItemsVC: UITableViewController {
         // Get the item associated with this row and pass it along
         let item = ItemStore.allItems[row]
         let detailViewController
-        = segue.destination as! DetailViewController
+        = segue.destination as! DetailItemsViewController
         detailViewController.item = item
         detailViewController.imageStore = imageStore
       } default:

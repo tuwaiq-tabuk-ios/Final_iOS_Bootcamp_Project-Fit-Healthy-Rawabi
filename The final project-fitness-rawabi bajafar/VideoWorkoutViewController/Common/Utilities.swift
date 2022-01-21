@@ -10,7 +10,9 @@ class Utilities {
     // Create the bottom line
     let bottomLine = CALayer()
     
-    bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width, height: 2)
+    bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2,
+                              width: textfield.frame.width,
+                              height: 2)
     
     
     bottomLine.backgroundColor = UIColor(named: "Gray")?.cgColor
@@ -19,8 +21,8 @@ class Utilities {
     
     // Add the line to the text field
     textfield.layer.addSublayer(bottomLine)
-    
   }
+  
   
   static func styleFilledButton(_ button:UIButton) {
     
@@ -51,6 +53,5 @@ class Utilities {
     let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&_])[A-Za-z\\d$@$#!%*?&_]{8,}")
     return passwordTest.evaluate(with: password)
   }
-  
   
 }

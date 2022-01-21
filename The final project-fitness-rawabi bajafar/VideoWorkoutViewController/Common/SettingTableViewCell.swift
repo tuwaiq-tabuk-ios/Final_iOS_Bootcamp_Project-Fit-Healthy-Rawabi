@@ -35,10 +35,12 @@ class SettingTableViewCell: UITableViewCell {
   
   
   
-  // MARK: - Table view data source
+  // MARK: - Inilizlzers
   
-  override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+  override init(style: UITableViewCell.CellStyle,
+                reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+    
     contentView.addSubview(label)
     contentView.addSubview(iconContainer)
     iconContainer.addSubview(iconImageView)
@@ -67,17 +69,20 @@ class SettingTableViewCell: UITableViewCell {
     
     label.frame = CGRect(x: 25 + iconContainer.frame.size.width,
                          y: 0,
-                         width:contentView.frame.size.width - 20 - iconContainer.frame.size.width,
+                         width:contentView.frame.size.width - 20 -
+                         iconContainer.frame.size.width,
                          height: contentView.frame.size.height)
   }
   
   
   override func prepareForReuse() {
     super.prepareForReuse()
+    
     iconImageView.image = nil
     label.text = nil
     iconContainer.backgroundColor = nil
   }
+  
   
   public func configure(with model: SettingsOption){
     label.text = model.title

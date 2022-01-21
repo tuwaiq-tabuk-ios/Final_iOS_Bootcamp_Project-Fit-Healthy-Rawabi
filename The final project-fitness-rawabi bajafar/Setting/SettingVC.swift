@@ -21,7 +21,6 @@ class SettingVC: UIViewController{
   // MARK: - Properties
   
   var Users1: Users?
-  
   let db = Firestore.firestore()
   
   
@@ -44,10 +43,11 @@ class SettingVC: UIViewController{
     
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     
-    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "profile") as! ProfileVC
+    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "profile") as! ProfileViweController
     self.present(nextViewController, animated:true, completion:nil)
     
   }
+  
   
   @IBAction func editePassword(_ sender: Any) {
     
@@ -62,6 +62,7 @@ class SettingVC: UIViewController{
     
   }
   
+  
   @IBAction func DeleteAccount(_ sender: Any) {
     let user = Auth.auth().currentUser
     user?.delete() { error in
@@ -74,6 +75,7 @@ class SettingVC: UIViewController{
     }
   }
   
+  
   @IBAction func SignOut(_ sender: UIBarButtonItem) {
     
     
@@ -84,7 +86,7 @@ class SettingVC: UIViewController{
     
     
     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "signOutSegue") as! ExerciseVC
+    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "signOutSegue") as! WelcomeVC
     self.present(nextViewController, animated:true, completion:nil)
     
   }

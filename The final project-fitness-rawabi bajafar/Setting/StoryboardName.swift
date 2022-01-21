@@ -32,9 +32,11 @@ extension Storyboarded where Self: UIViewController {
     return String(describing: Self.self)
   }
   
+  
   static var storyboardName: StoryboardName {
     return .main
   }
+  
   
   static func instantiate() -> Self {
     let storyboard = UIStoryboard(name: storyboardName.rawValue, bundle: Bundle.main)

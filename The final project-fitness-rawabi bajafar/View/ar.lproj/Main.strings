@@ -1,0 +1,345 @@
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "0QU-s6-4wX"; */
+"0QU-s6-4wX.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0QU-s6-4wX"; */
+"0QU-s6-4wX.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Forgot your password?"; ObjectID = "0ke-l5-2fT"; */
+"0ke-l5-2fT.configuration.title" = "Forgot your password?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0ke-l5-2fT"; */
+"0ke-l5-2fT.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "00 calories"; ObjectID = "1gQ-0f-XkX"; */
+"1gQ-0f-XkX.text" = "00 calories";
+
+/* Class = "UILabel"; text = "Reset Password"; ObjectID = "1rE-z5-RqL"; */
+"1rE-z5-RqL.text" = "Reset Password";
+
+/* Class = "UILabel"; text = "BMI Calculator"; ObjectID = "1vv-6g-gSN"; */
+"1vv-6g-gSN.text" = "BMI Calculator";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "2B4-cW-3Vf"; */
+"2B4-cW-3Vf.title" = "Item";
+
+/* Class = "UILabel"; text = "Descreption"; ObjectID = "2xV-FF-MD7"; */
+"2xV-FF-MD7.text" = "Descreption";
+
+/* Class = "UILabel"; text = "Below 18.5 : Underweight"; ObjectID = "3nY-WH-329"; */
+"3nY-WH-329.text" = "Below 18.5 : Underweight";
+
+/* Class = "UILabel"; text = "25.0 - 29.9 : Overweight"; ObjectID = "4gZ-D8-GlP"; */
+"4gZ-D8-GlP.text" = "25.0 - 29.9 : Overweight";
+
+/* Class = "UITextField"; placeholder = "   Weight"; ObjectID = "59W-dw-vBS"; */
+"59W-dw-vBS.placeholder" = "   Weight";
+
+/* Class = "UIButton"; configuration.title = "Create a new account? Sign Up"; ObjectID = "6La-Ol-gVh"; */
+"6La-Ol-gVh.configuration.title" = "Create a new account? Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6La-Ol-gVh"; */
+"6La-Ol-gVh.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Sign UP"; ObjectID = "6Pt-pH-Pn8"; */
+"6Pt-pH-Pn8.configuration.title" = "Sign UP";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6Pt-pH-Pn8"; */
+"6Pt-pH-Pn8.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Food"; ObjectID = "6WS-7Q-Z7d"; */
+"6WS-7Q-Z7d.title" = "Food";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6he-G5-r78"; */
+"6he-G5-r78.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Send"; ObjectID = "82P-2t-Vf7"; */
+"82P-2t-Vf7.configuration.title" = "Send";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "82P-2t-Vf7"; */
+"82P-2t-Vf7.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Calorie Counter"; ObjectID = "8Oi-Jg-cSN"; */
+"8Oi-Jg-cSN.normalTitle" = "Calorie Counter";
+
+/* Class = "UIButton"; normalTitle = "ToDoListItem"; ObjectID = "ApU-bF-3i0"; */
+"ApU-bF-3i0.normalTitle" = "ToDoListItem";
+
+/* Class = "UITextField"; placeholder = "(in)"; ObjectID = "BpV-am-ny9"; */
+"BpV-am-ny9.placeholder" = "(in)";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BtH-Eq-Jrh"; */
+"BtH-Eq-Jrh.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Edite Password"; ObjectID = "C0B-mU-k3u"; */
+"C0B-mU-k3u.normalTitle" = "Edite Password";
+
+/* Class = "UILabel"; text = "  Label"; ObjectID = "D6W-Sk-cvy"; */
+"D6W-Sk-cvy.text" = "  Label";
+
+/* Class = "UITextField"; placeholder = "Confirm password"; ObjectID = "DWY-G2-ZCJ"; */
+"DWY-G2-ZCJ.placeholder" = "Confirm password";
+
+/* Class = "UILabel"; text = "Next goals"; ObjectID = "GsX-Ar-uxL"; */
+"GsX-Ar-uxL.text" = "Next goals";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "HVP-SJ-sve"; */
+"HVP-SJ-sve.title" = "Map";
+
+/* Class = "UILabel"; text = "18.5 - 24.9 : Healthy Weight"; ObjectID = "Iau-q4-80P"; */
+"Iau-q4-80P.text" = "18.5 - 24.9 : Healthy Weight";
+
+/* Class = "UITabBarItem"; title = "exersice"; ObjectID = "Iw4-JV-p1p"; */
+"Iw4-JV-p1p.title" = "exersice";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "JH7-el-SHs"; */
+"JH7-el-SHs.normalTitle" = "Send";
+
+/* Class = "UITextField"; placeholder = "Height"; ObjectID = "JQR-DB-Zig"; */
+"JQR-DB-Zig.placeholder" = "Height";
+
+/* Class = "UITextField"; placeholder = "   Height"; ObjectID = "Ju4-0q-L8X"; */
+"Ju4-0q-L8X.placeholder" = "   Height";
+
+/* Class = "UIButton"; configuration.title = "Lots of physical activity and movement"; ObjectID = "KZU-2G-RnS"; */
+"KZU-2G-RnS.configuration.title" = "Lots of physical activity and movement";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KZU-2G-RnS"; */
+"KZU-2G-RnS.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Lgw-KE-9VA"; */
+"Lgw-KE-9VA.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "breakfast recipe"; ObjectID = "MXf-iX-XXW"; */
+"MXf-iX-XXW.text" = "breakfast recipe";
+
+/* Class = "UIButton"; configuration.title = "Most of the time at home"; ObjectID = "N67-F8-jWR"; */
+"N67-F8-jWR.configuration.title" = "Most of the time at home";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "N67-F8-jWR"; */
+"N67-F8-jWR.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Create Item"; ObjectID = "NJb-2h-Sh5"; */
+"NJb-2h-Sh5.normalTitle" = "Create Item";
+
+/* Class = "UIButton"; normalTitle = "Sign Out"; ObjectID = "OG3-nC-yAd"; */
+"OG3-nC-yAd.normalTitle" = "Sign Out";
+
+/* Class = "UILabel"; text = "Enter Height:"; ObjectID = "Ocj-gc-JrP"; */
+"Ocj-gc-JrP.text" = "Enter Height:";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "Ohs-VZ-Rfy"; */
+"Ohs-VZ-Rfy.placeholder" = "password";
+
+/* Class = "UILabel"; text = "Ingredients"; ObjectID = "PaU-0D-kfc"; */
+"PaU-0D-kfc.text" = "Ingredients";
+
+/* Class = "UIButton"; configuration.title = "More healthy recipes"; ObjectID = "SOY-Fh-KnR"; */
+"SOY-Fh-KnR.configuration.title" = "More healthy recipes";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SOY-Fh-KnR"; */
+"SOY-Fh-KnR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Please enter your email to receive a \nlink to  create a new password via email"; ObjectID = "SeH-vB-vrO"; */
+"SeH-vB-vrO.text" = "Please enter your email to receive a \nlink to  create a new password via email";
+
+/* Class = "UITextField"; placeholder = "Weight"; ObjectID = "TY2-2O-hrS"; */
+"TY2-2O-hrS.placeholder" = "Weight";
+
+/* Class = "UINavigationItem"; title = "LootLogger"; ObjectID = "Tcm-9k-dBv"; */
+"Tcm-9k-dBv.title" = "LootLogger";
+
+/* Class = "UITextField"; placeholder = "LastName"; ObjectID = "V1X-r2-nYk"; */
+"V1X-r2-nYk.placeholder" = "LastName";
+
+/* Class = "UILabel"; text = "  Label"; ObjectID = "Vg3-f8-QiX"; */
+"Vg3-f8-QiX.text" = "  Label";
+
+/* Class = "UILabel"; text = "error"; ObjectID = "W1K-YU-5Uu"; */
+"W1K-YU-5Uu.text" = "error";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "WgV-Fc-cQ1"; */
+"WgV-Fc-cQ1.title" = "Home";
+
+/* Class = "UILabel"; text = "Weight Training"; ObjectID = "X82-3T-wqR"; */
+"X82-3T-wqR.text" = "Weight Training";
+
+/* Class = "UITabBarItem"; title = "Setting"; ObjectID = "XEu-vl-p0M"; */
+"XEu-vl-p0M.title" = "Setting";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "XHb-Vw-qkh"; */
+"XHb-Vw-qkh.placeholder" = "password";
+
+/* Class = "UILabel"; text = "0.0"; ObjectID = "XY7-4u-PX3"; */
+"XY7-4u-PX3.text" = "0.0";
+
+/* Class = "UIButton"; normalTitle = "Calculate BMI"; ObjectID = "YOa-Va-TZt"; */
+"YOa-Va-TZt.normalTitle" = "Calculate BMI";
+
+/* Class = "UILabel"; text = "breakfast"; ObjectID = "ZO1-bI-aMN"; */
+"ZO1-bI-aMN.text" = "breakfast";
+
+/* Class = "UITextField"; placeholder = "(lbs)"; ObjectID = "ZZ1-w8-v84"; */
+"ZZ1-w8-v84.placeholder" = "(lbs)";
+
+/* Class = "UILabel"; text = "Calorie Counter"; ObjectID = "ZhZ-2j-8Qr"; */
+"ZhZ-2j-8Qr.text" = "Calorie Counter";
+
+/* Class = "UIButton"; configuration.title = "Delete Account"; ObjectID = "aT2-TD-8WZ"; */
+"aT2-TD-8WZ.configuration.title" = "Delete Account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aT2-TD-8WZ"; */
+"aT2-TD-8WZ.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "   First Name"; ObjectID = "ar1-nv-4yv"; */
+"ar1-nv-4yv.placeholder" = "   First Name";
+
+/* Class = "UILabel"; text = "What is your gender?"; ObjectID = "bXg-NB-97M"; */
+"bXg-NB-97M.text" = "What is your gender?";
+
+/* Class = "UISegmentedControl"; bZy-6R-gU5.segmentTitles[0] = "Male"; ObjectID = "bZy-6R-gU5"; */
+"bZy-6R-gU5.segmentTitles[0]" = "Male";
+
+/* Class = "UISegmentedControl"; bZy-6R-gU5.segmentTitles[1] = "Female"; ObjectID = "bZy-6R-gU5"; */
+"bZy-6R-gU5.segmentTitles[1]" = "Female";
+
+/* Class = "UIButton"; configuration.title = "Most of the time in the office"; ObjectID = "biz-2k-YhD"; */
+"biz-2k-YhD.configuration.title" = "Most of the time in the office";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "biz-2k-YhD"; */
+"biz-2k-YhD.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "moderate intensity activity"; ObjectID = "c0b-zk-Zgu"; */
+"c0b-zk-Zgu.configuration.title" = "moderate intensity activity";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "c0b-zk-Zgu"; */
+"c0b-zk-Zgu.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "   Date Of Birth"; ObjectID = "cG3-VR-x56"; */
+"cG3-VR-x56.placeholder" = "   Date Of Birth";
+
+/* Class = "UILabel"; text = "Error"; ObjectID = "d7W-pB-Ttm"; */
+"d7W-pB-Ttm.text" = "Error";
+
+/* Class = "UINavigationItem"; title = "My To Do List"; ObjectID = "dHX-iX-MLn"; */
+"dHX-iX-MLn.title" = "My To Do List";
+
+/* Class = "UIButton"; configuration.title = "Have Account? Login"; ObjectID = "dSs-t4-QJG"; */
+"dSs-t4-QJG.configuration.title" = "Have Account? Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dSs-t4-QJG"; */
+"dSs-t4-QJG.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Edite Password"; ObjectID = "dVZ-te-ky7"; */
+"dVZ-te-ky7.placeholder" = "Edite Password";
+
+/* Class = "UITextField"; placeholder = "   Last Name"; ObjectID = "dah-0f-EPh"; */
+"dah-0f-EPh.placeholder" = "   Last Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fXJ-EV-ign"; */
+"fXJ-EV-ign.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "gB0-WW-WWC"; */
+"gB0-WW-WWC.normalTitle" = "Save";
+
+/* Class = "UIButton"; normalTitle = "BMI Calculator "; ObjectID = "gc2-ZP-Sk3"; */
+"gc2-ZP-Sk3.normalTitle" = "BMI Calculator ";
+
+/* Class = "UIButton"; configuration.title = "Sign UP"; ObjectID = "hIv-MD-6ra"; */
+"hIv-MD-6ra.configuration.title" = "Sign UP";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hIv-MD-6ra"; */
+"hIv-MD-6ra.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Workout Videos"; ObjectID = "iOR-oe-6nb"; */
+"iOR-oe-6nb.text" = "Workout Videos";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "kXg-0T-crh"; */
+"kXg-0T-crh.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kXg-0T-crh"; */
+"kXg-0T-crh.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Edite Profile"; ObjectID = "lDU-Yd-miQ"; */
+"lDU-Yd-miQ.normalTitle" = "Edite Profile";
+
+/* Class = "UILabel"; text = "Enter Weight:"; ObjectID = "lF9-rx-1Y2"; */
+"lF9-rx-1Y2.text" = "Enter Weight:";
+
+/* Class = "UILabel"; text = "Added Ingredients:"; ObjectID = "lIe-oU-JpU"; */
+"lIe-oU-JpU.text" = "Added Ingredients:";
+
+/* Class = "UILabel"; text = "CrossFit Video"; ObjectID = "mFZ-Zd-q55"; */
+"mFZ-Zd-q55.text" = "CrossFit Video";
+
+/* Class = "UILabel"; text = "Cardio Video"; ObjectID = "nXQ-h9-Jxj"; */
+"nXQ-h9-Jxj.text" = "Cardio Video";
+
+/* Class = "UILabel"; text = "Age:"; ObjectID = "oWt-xW-5yj"; */
+"oWt-xW-5yj.text" = "Age:";
+
+/* Class = "UITextField"; placeholder = "   Ermail"; ObjectID = "oak-RP-jJU"; */
+"oak-RP-jJU.placeholder" = "   Ermail";
+
+/* Class = "UIButton"; normalTitle = "Save BMI"; ObjectID = "pJm-Bf-x2Y"; */
+"pJm-Bf-x2Y.normalTitle" = "Save BMI";
+
+/* Class = "UITextField"; placeholder = "FirstName"; ObjectID = "pmS-vv-RF1"; */
+"pmS-vv-RF1.placeholder" = "FirstName";
+
+/* Class = "UILabel"; text = "FIT&Health"; ObjectID = "qAm-Bh-b0E"; */
+"qAm-Bh-b0E.text" = "FIT&Health";
+
+/* Class = "UILabel"; text = "30.0 and above : Obese"; ObjectID = "qPj-bF-aPP"; */
+"qPj-bF-aPP.text" = "30.0 and above : Obese";
+
+/* Class = "UIButton"; normalTitle = "Add Item"; ObjectID = "ror-TA-E8f"; */
+"ror-TA-E8f.normalTitle" = "Add Item";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "scw-Nm-6Dn"; */
+"scw-Nm-6Dn.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tEc-dD-NPj"; */
+"tEc-dD-NPj.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "save"; ObjectID = "tI6-sJ-EEO"; */
+"tI6-sJ-EEO.configuration.title" = "save";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tI6-sJ-EEO"; */
+"tI6-sJ-EEO.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Please describe your daily lifestyle"; ObjectID = "tLe-aj-GMQ"; */
+"tLe-aj-GMQ.text" = "Please describe your daily lifestyle";
+
+/* Class = "UITextField"; placeholder = "Date Of Birth"; ObjectID = "tbD-IX-RMZ"; */
+"tbD-IX-RMZ.placeholder" = "Date Of Birth";
+
+/* Class = "UIButton"; configuration.title = "Male"; ObjectID = "wA7-Ra-RcY"; */
+"wA7-Ra-RcY.configuration.title" = "Male";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wA7-Ra-RcY"; */
+"wA7-Ra-RcY.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "(years)"; ObjectID = "wBM-VT-PTr"; */
+"wBM-VT-PTr.placeholder" = "(years)";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "xC5-sK-Il8"; */
+"xC5-sK-Il8.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "My To Do List"; ObjectID = "yB8-Fm-t83"; */
+"yB8-Fm-t83.text" = "My To Do List";
+
+/* Class = "UIButton"; configuration.title = "Female"; ObjectID = "yZU-al-ihO"; */
+"yZU-al-ihO.configuration.title" = "Female";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "yZU-al-ihO"; */
+"yZU-al-ihO.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "zHg-O7-Y5G"; */
+"zHg-O7-Y5G.placeholder" = "Email";
+
+/* Class = "UISegmentedControl"; zZq-vG-uT5.segmentTitles[0] = "Imperial"; ObjectID = "zZq-vG-uT5"; */
+"zZq-vG-uT5.segmentTitles[0]" = "Imperial";
+
+/* Class = "UISegmentedControl"; zZq-vG-uT5.segmentTitles[1] = "Metric"; ObjectID = "zZq-vG-uT5"; */
+"zZq-vG-uT5.segmentTitles[1]" = "Metric";

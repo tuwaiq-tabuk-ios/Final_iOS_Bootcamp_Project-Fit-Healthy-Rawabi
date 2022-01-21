@@ -9,9 +9,6 @@ import Foundation
 import UIKit
 
 struct Food {
- 
-  // MARK: - Properties
-
   var name: String
   var image: UIImage?
   var ingredients: [String]

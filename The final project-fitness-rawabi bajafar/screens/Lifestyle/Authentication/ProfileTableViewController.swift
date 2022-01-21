@@ -26,6 +26,7 @@ class ProfileTableViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     overrideUserInterfaceStyle = .light
     navigationItem.setHidesBackButton(true, animated: true)
     
@@ -41,10 +42,13 @@ class ProfileTableViewController: UITableViewController {
   // MARK: - Table view data source
   
   private func setupContextMenu() {
+    
     let interaction = UIContextMenuInteraction(delegate: self)
+    
     avatarImageView.isUserInteractionEnabled = true
     avatarImageView.addInteraction(interaction)
   }
+  
   
   private func selectAvatar(){
     let imagePicker = UIImagePickerController()
@@ -52,6 +56,7 @@ class ProfileTableViewController: UITableViewController {
     imagePicker.delegate = self
     present(imagePicker, animated: true, completion: nil)
   }
+  
   
   private func setDefaultAvatar() {
     avatarImageView.image = UIImage(named: "User Circle")
@@ -65,6 +70,7 @@ class ProfileTableViewController: UITableViewController {
     // #warning Incomplete implementation, return the number of sections
     return 1
   }
+  
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows

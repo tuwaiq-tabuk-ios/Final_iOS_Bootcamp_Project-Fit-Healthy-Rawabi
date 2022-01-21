@@ -45,5 +45,4 @@ class SignUpSelection: UIViewController {
       
     }
   }
-  
 }
